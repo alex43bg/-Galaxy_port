@@ -43,7 +43,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
+          I&apos;m a Frontand Software Engineer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
         <motion.a
@@ -59,7 +59,7 @@ const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <img
-          src="/mainIconsdark.svg"
+          src="./assets/images/mainIconsdark.svg"
           alt="work icons"
           height={650}
           width={650}

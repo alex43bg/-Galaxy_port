@@ -1,15 +1,21 @@
 // import { useState } from 'react'
-import './App.css'
+import '../src/index.css'
 // import Hero from '../components/main/Hero'
 import StarBackground from '../src/components/main/StarBackground'
+import Navbar from './components/main/Navbar'
+import Hero from './components/main/Hero'
+import Footer from './components/main/Footer'
+import Encryption from './components/main/Encryption'
 
 function App() {
-	// const [count, setCount] = useState(0)
 
 	return (
 		<>
-			<div>hallo</div>
-      <StarBackground />
+			<Navbar />
+			<Hero />
+			<Encryption/>
+			<Footer />
+			<StarBackground />
 		</>
 	)
 }
