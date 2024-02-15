@@ -59,7 +59,7 @@ const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <div style={{ position: "relative" }}>
-          <img
+          <motion.img
             src="./assets/images/min3-min.png"
             alt="work icons"
             height={450}
@@ -69,10 +69,13 @@ const HeroContent = () => {
               left: 115,
               filter: "blur(100px)",
               position: "relative",
-              zIndex: "1", 
+              zIndex: "1",
             }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
           />
-          <img
+          <motion.img
             src="./assets/images/min3-min.png"
             alt="work icons"
             height={445}
@@ -86,6 +89,9 @@ const HeroContent = () => {
               height: "100%", // Нижня половина зображення
               zIndex: "1", // Щоб зображення було поверх розмиття
             }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
           />
         </div>
       </motion.div>
