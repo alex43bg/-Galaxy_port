@@ -1,7 +1,6 @@
 // import { useState } from 'react'
 import "../src/index.css";
-// import Hero from '../components/main/Hero'
-// import StarBackground from "../src/components/main/StarBackground";
+import StarBackground from "../src/components/main/StarBackground";
 import Navbar from "./components/main/Navbar";
 import Hero from "./components/main/Hero";
 import Footer from "./components/main/Footer";
@@ -11,7 +10,7 @@ import Skills from './components/main/Skills'
 function App() {
   return (
     <>
-      {/* <StarBackground /> */}
+      <StarBackground />
       <Navbar />
       <Hero />
       <Skills />

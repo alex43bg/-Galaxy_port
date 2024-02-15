@@ -12,7 +12,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-row items-center justify-center px-20 mt-40 w-full"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -56,42 +56,38 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full h-full flex justify-center items-center z-[-2]"
       >
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative"}}>
           <motion.img
             src="./assets/images/min3-min.png"
             alt="work icons"
-            height={450}
-            width={450}
+            height={440}
+            width={440}
             style={{
               top: 65,
               left: 115,
+
               filter: "blur(100px)",
               position: "relative",
-              zIndex: "1",
+              zIndex: "-2",
             }}
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
           />
           <motion.img
             src="./assets/images/min3-min.png"
             alt="work icons"
-            height={445}
-            width={445}
+            height={440}
+            width={440}
             style={{
               position: "absolute",
               top: 50,
               bottom: 0,
               left: 100,
+
               width: "100%",
               height: "100%", // Нижня половина зображення
-              zIndex: "1", // Щоб зображення було поверх розмиття
+              zIndex: "-2", // Щоб зображення було поверх розмиття
             }}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
           />
         </div>
       </motion.div>
