@@ -58,12 +58,36 @@ const HeroContent = () => {
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
       >
-        <img
-          src="./assets/images/mainIconsdark.svg"
-          alt="work icons"
-          height={650}
-          width={650}
-        />
+        <div style={{ position: "relative" }}>
+          <img
+            src="./assets/images/min3-min.png"
+            alt="work icons"
+            height={450}
+            width={450}
+            style={{
+              top: 65,
+              left: 115,
+              filter: "blur(100px)",
+              position: "relative",
+              zIndex: "1", 
+            }}
+          />
+          <img
+            src="./assets/images/min3-min.png"
+            alt="work icons"
+            height={445}
+            width={445}
+            style={{
+              position: "absolute",
+              top: 50,
+              bottom: 0,
+              left: 100,
+              width: "100%",
+              height: "100%", // Нижня половина зображення
+              zIndex: "1", // Щоб зображення було поверх розмиття
+            }}
+          />
+        </div>
       </motion.div>
     </motion.div>
   );
