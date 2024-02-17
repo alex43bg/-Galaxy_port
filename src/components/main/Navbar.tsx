@@ -2,14 +2,31 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="wrapper w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 flex justify-between items-center">
+    <div
+      className="
+    WRAPPER
+    w-full 
+    h-[65px] 
+    fixed 
+    top-0 
+    shadow-lg 
+    shadow-[#2A0E61]/50 
+    bg-[#03001417] 
+    backdrop-blur-md 
+    z-50 
+    px-10
+    flex 
+    justify-between 
+    items-center"
+    >
       <div className="flex-grow flex justify-center items-center">
         <a
           href="#"
           className="
+        NAME
         font-bold 
         absolute 
-        sm:left-20 
+        sm:left-20
         md:left-10 
         lg:px-10
         hidden 
@@ -25,6 +42,7 @@ const Navbar = () => {
         </a>
         <div
           className="
+        NAV_MENU
         w-[300px] 
         md:w-[450px] 
         flex 

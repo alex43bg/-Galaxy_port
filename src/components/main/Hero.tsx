@@ -5,7 +5,12 @@ import HeroContent from "../sub/HeroContent";
 const Hero = () => {
   return (
     <motion.div
-      className="relative flex flex-col h-full w-full"
+      className="
+      relative 
+      flex 
+      flex-col 
+      h-full 
+      w-full"
       id="about-me"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
