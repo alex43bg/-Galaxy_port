@@ -60,7 +60,7 @@ const HeroContent = () => {
 
           <div
             className="
-            animate-custom-fade-in
+            animate-flip-in-hor-bottom
             text-4xl 
             sm:text-4xl 
             md:text-5xl 
@@ -80,7 +80,6 @@ const HeroContent = () => {
               Providing
               <span
                 className="
-              
               text-transparent 
               bg-clip-text 
               bg-gradient-to-r 
@@ -96,7 +95,7 @@ const HeroContent = () => {
 
           <p
             className="
-            animate-flip-in-hor-bottom
+            animate-fade-in-right
             text-lg 
             md:max-w-[400px]
             lg:max-w-[600px]
@@ -135,7 +134,7 @@ const HeroContent = () => {
           items-center 
           z-[-2]"
         >
-          <div style={{ position: "relative",  }}>
+          <div style={{ position: "relative" }}>
             <img
               src="./assets/images/min3-min.png"
               alt="work icons"

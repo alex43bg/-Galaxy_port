@@ -3875,9 +3875,11 @@ No matching component was found for:
         NAME
         font-bold 
         absolute 
-        sm:left-20
+        sm:left-10
         md:left-10 
         lg:px-10
+        xl:px-10
+        2xl:px-20
         hidden 
         sm:block 
         text-gray-300 
@@ -3913,9 +3915,16 @@ No matching component was found for:
       sm:px-10
       md:px-10  
       lg:px-20 
-      mt-40 
-      w-full`,children:gt.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-10 w-full md:max-w-[1800px]",children:[gt.jsxs("div",{className:"flex flex-col gap-5 justify-center text-start",children:[gt.jsxs("div",{className:`
+      mt-40
+      w-full`,children:gt.jsxs("div",{className:`
+      grid 
+      grid-cols-1 
+      md:grid-cols-[2fr,1fr] 
+      gap-10 
+      w-full 
+      md:max-w-[1700px]`,children:[gt.jsxs("div",{className:"flex flex-col gap-5 justify-center text-start",children:[gt.jsxs("div",{className:`
             WELCOME_BOX
+            animate-custom-fade-in
             w-[350px] 
             md:w-[400px] 
             lg:w-[600px] 
@@ -3932,6 +3941,7 @@ No matching component was found for:
             Welcome-text 
             text-[#F0EAD6] 
             text-[14px]`,children:"Frontend Developer Portfolio"})]}),gt.jsx("div",{className:`
+            animate-flip-in-hor-bottom
             text-4xl 
             sm:text-4xl 
             md:text-5xl 
@@ -3944,18 +3954,21 @@ No matching component was found for:
             text-white
             md:max-w-[500px]  
             lg:max-w-[600px] 
-            max-w-[600px]`,children:gt.jsxs("span",{children:["Providing",gt.jsxs("span",{className:`
+            max-w-[600px]
+            `,children:gt.jsxs("span",{children:["Providing",gt.jsxs("span",{className:`
               text-transparent 
               bg-clip-text 
               bg-gradient-to-r 
               from-purple-500 
               to-cyan-500`,children:[" ","the best"," "]}),"project experience"]})}),gt.jsx("p",{className:`
+            animate-fade-in-right
             text-lg 
             md:max-w-[400px]
             lg:max-w-[600px]
             text-gray-400 
             my-5 
             max-w-[600px]`,children:'"I am a frontend developer with a passion for creating impressive and intuitively understandable interfaces. My task is to turn complexity into simplicity, creating aesthetic and functional web applications that everyone can use comfortably."'}),gt.jsx("a",{className:`
+            animate-fade-in-right
             text-[#FDF5E6] 
             py-2 
             button-primary 
@@ -3964,17 +3977,15 @@ No matching component was found for:
             cursor-pointer 
             rounded-lg 
             max-w-[200px]`,children:"Learn More!"})]}),gt.jsx("div",{className:`
+          animate-custom-fade-in
           w-full 
           h-full 
           flex 
           justify-center 
           items-center 
-          z-[-2]`,children:gt.jsxs("div",{style:{position:"relative"},children:[gt.jsx("img",{src:"./assets/images/min3-min.png",alt:"work icons",height:440,width:440,className:"",style:{top:65,left:10,filter:"blur(100px)",position:"relative",zIndex:"-2"}}),gt.jsx("img",{src:"./assets/images/min3-min.png",alt:"work icons",height:440,width:440,className:"",style:{position:"absolute",top:50,bottom:0,left:1,width:"100%",height:"100%",zIndex:"-2"}})]})})]})}),hz=()=>gt.jsxs("div",{className:`
-      relative 
-      flex 
-      flex-col 
-      h-full 
-      w-full`,id:"about-me",children:[gt.jsx("video",{autoPlay:!0,muted:!0,loop:!0,className:`
+          z-[-2]`,children:gt.jsxs("div",{style:{position:"relative"},children:[gt.jsx("img",{src:"./assets/images/min3-min.png",alt:"work icons",height:440,width:440,style:{top:65,left:10,filter:"blur(100px)",position:"relative",zIndex:"-2"}}),gt.jsx("img",{src:"./assets/images/min3-min.png",alt:"work icons",height:440,width:440,style:{position:"absolute",top:50,bottom:0,left:1,width:"100%",height:"100%",zIndex:"-2"}})]})})]})}),hz=()=>gt.jsxs("div",{className:"relative flex flex-col h-full w-full",id:"about-me",children:[gt.jsx("video",{autoPlay:!0,muted:!0,loop:!0,className:`
+        animate-custom-fade-in
+        z-[-2]
         rotate-180 
         absolute 
         top-[-700px] 
@@ -3987,7 +3998,5 @@ No matching component was found for:
         1200:top-[-340px] 
         h-full 
         w-full 
-        left-0 
-        z-[-2] 
-        object-cover 
-        `,children:gt.jsx("source",{src:"assets/images/blackhole.webm",type:"video/webm"})}),gt.jsx(fz,{})]});function dz(){const n=navigator.userAgent,e=n.includes("Safari")&&!n.includes("Chrome"),t=/Mobi/.test(n),i=e&&!t;return gt.jsxs(gt.Fragment,{children:[!i&&gt.jsx(oz,{}),gt.jsx(az,{}),gt.jsx(hz,{})]})}O0.createRoot(document.getElementById("root")).render(gt.jsx(XR.StrictMode,{children:gt.jsx(dz,{})}));
+        left-0  
+        object-cover`,children:gt.jsx("source",{src:"assets/images/blackhole.webm",type:"video/webm"})}),gt.jsx(fz,{})]});function dz(){const n=navigator.userAgent,e=n.includes("Safari")&&!n.includes("Chrome"),t=/Mobi/.test(n),i=e&&!t;return gt.jsxs(gt.Fragment,{children:[!i&&gt.jsx(oz,{}),gt.jsx(az,{}),gt.jsx(hz,{})]})}O0.createRoot(document.getElementById("root")).render(gt.jsx(XR.StrictMode,{children:gt.jsx(dz,{})}));
