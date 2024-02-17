@@ -1,17 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "../../utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const HeroContent = () => {
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
+    <div
       className="
       HERO_WRAPPER
       flex 
@@ -36,8 +28,7 @@ const HeroContent = () => {
       m-auto 
       text-start"
       >
-        <motion.div
-          variants={slideInFromTop}
+        <div
           className="
           WELCOME_BOX
           w-[350px] 
@@ -64,10 +55,9 @@ const HeroContent = () => {
           >
             Frontend Developer Portfolio
           </h1>
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={slideInFromLeft(0.5)}
+        <div
           className="
           text-4xl 
           sm:text-4xl 
@@ -98,11 +88,11 @@ const HeroContent = () => {
             </span>
             project exprience
           </span>
-        </motion.div>
+        </div>
 
-        <motion.p
-          variants={slideInFromLeft(0.8)}
+        <p
           className="
+          animate-bounce
           text-lg 
           md:max-w-[400px]
           lg:max-w-[600px]
@@ -114,9 +104,8 @@ const HeroContent = () => {
           intuitively understandable interfaces. My task is to turn complexity
           into simplicity, creating aesthetic and functional web applications
           that everyone can use comfortably."
-        </motion.p>
-        <motion.a
-          variants={slideInFromLeft(1)}
+        </p>
+        <a
           className="
           text-[#FDF5E6] 
           py-2 
@@ -128,11 +117,10 @@ const HeroContent = () => {
           max-w-[200px]"
         >
           Learn More!
-        </motion.a>
+        </a>
       </div>
 
-      <motion.div
-        variants={slideInFromRight(0.8)}
+      <div
         className="
         w-full 
         h-full 
@@ -142,7 +130,7 @@ const HeroContent = () => {
         z-[-2]"
       >
         <div style={{ position: "relative" }}>
-          <motion.img
+          <img
             src="./assets/images/min3-min.png"
             alt="work icons"
             height={440}
@@ -155,7 +143,7 @@ const HeroContent = () => {
               zIndex: "-2",
             }}
           />
-          <motion.img
+          <img
             src="./assets/images/min3-min.png"
             alt="work icons"
             height={440}
@@ -171,8 +159,8 @@ const HeroContent = () => {
             }}
           />
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

@@ -26,9 +26,11 @@ const Navbar = () => {
         NAME
         font-bold 
         absolute 
-        sm:left-20
+        sm:left-10
         md:left-10 
         lg:px-10
+        xl:px-10
+        2xl:px-20
         hidden 
         sm:block 
         text-gray-300 

@@ -1,17 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "../../utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const HeroContent = () => {
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
+    <div
       className="
       HERO_WRAPPER
       flex 
@@ -22,15 +14,23 @@ const HeroContent = () => {
       sm:px-10
       md:px-10  
       lg:px-20 
-      mt-40 
+      mt-40
       w-full"
     >
-      <div className="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-10 w-full md:max-w-[1800px]">
+      <div
+        className="
+      grid 
+      grid-cols-1 
+      md:grid-cols-[2fr,1fr] 
+      gap-10 
+      w-full 
+      md:max-w-[1700px]"
+      >
         <div className="flex flex-col gap-5 justify-center text-start">
-          <motion.div
-            variants={slideInFromTop}
+          <div
             className="
             WELCOME_BOX
+            animate-custom-fade-in
             w-[350px] 
             md:w-[400px] 
             lg:w-[600px] 
@@ -42,6 +42,7 @@ const HeroContent = () => {
           >
             <SparklesIcon
               className="
+            BORDERED
             text-[#b49bff] 
             mr-[10px] 
             h-5 
@@ -55,11 +56,11 @@ const HeroContent = () => {
             >
               Frontend Developer Portfolio
             </h1>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={slideInFromLeft(0.5)}
+          <div
             className="
+            animate-custom-fade-in
             text-4xl 
             sm:text-4xl 
             md:text-5xl 
@@ -72,12 +73,14 @@ const HeroContent = () => {
             text-white
             md:max-w-[500px]  
             lg:max-w-[600px] 
-            max-w-[600px]"
+            max-w-[600px]
+            "
           >
             <span>
               Providing
               <span
                 className="
+              
               text-transparent 
               bg-clip-text 
               bg-gradient-to-r 
@@ -89,11 +92,11 @@ const HeroContent = () => {
               </span>
               project experience
             </span>
-          </motion.div>
+          </div>
 
-          <motion.p
-            variants={slideInFromLeft(0.8)}
+          <p
             className="
+            animate-flip-in-hor-bottom
             text-lg 
             md:max-w-[400px]
             lg:max-w-[600px]
@@ -101,14 +104,14 @@ const HeroContent = () => {
             my-5 
             max-w-[600px]"
           >
-            "I am a frontend developer with a passion for creating impressive and
-            intuitively understandable interfaces. My task is to turn complexity
-            into simplicity, creating aesthetic and functional web applications
-            that everyone can use comfortably."
-          </motion.p>
-          <motion.a
-            variants={slideInFromLeft(1)}
+            "I am a frontend developer with a passion for creating impressive
+            and intuitively understandable interfaces. My task is to turn
+            complexity into simplicity, creating aesthetic and functional web
+            applications that everyone can use comfortably."
+          </p>
+          <a
             className="
+            animate-fade-in-right
             text-[#FDF5E6] 
             py-2 
             button-primary 
@@ -119,12 +122,12 @@ const HeroContent = () => {
             max-w-[200px]"
           >
             Learn More!
-          </motion.a>
+          </a>
         </div>
 
-        <motion.div
-          variants={slideInFromRight(0.8)}
+        <div
           className="
+          animate-custom-fade-in
           w-full 
           h-full 
           flex 
@@ -132,13 +135,12 @@ const HeroContent = () => {
           items-center 
           z-[-2]"
         >
-          <div style={{ position: "relative" }}>
-            <motion.img
+          <div style={{ position: "relative",  }}>
+            <img
               src="./assets/images/min3-min.png"
               alt="work icons"
               height={440}
               width={440}
-              className="" // Add this class
               style={{
                 top: 65,
                 left: 10,
@@ -147,12 +149,11 @@ const HeroContent = () => {
                 zIndex: "-2",
               }}
             />
-            <motion.img
+            <img
               src="./assets/images/min3-min.png"
               alt="work icons"
               height={440}
               width={440}
-              className="" // Add this class
               style={{
                 position: "absolute",
                 top: 50,
@@ -164,11 +165,10 @@ const HeroContent = () => {
               }}
             />
           </div>
-        </motion.div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
-
 
 export default HeroContent;
