@@ -24,7 +24,8 @@ const Hero = () => {
         h-full 
         w-full 
         left-0  
-        object-cover"
+        object-cover
+        "
       >
         <source src="assets/images/blackhole.webm" type="video/webm" />
       </video>

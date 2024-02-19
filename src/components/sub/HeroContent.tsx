@@ -12,9 +12,12 @@ const HeroContent = () => {
       justify-center 
       px-5
       sm:px-10
+      mt-[120px]
+      md:mt-40
       md:px-10  
       lg:px-20 
-      mt-40
+      lg:mt-40
+
       w-full"
     >
       <div
@@ -22,7 +25,7 @@ const HeroContent = () => {
       grid 
       grid-cols-1 
       md:grid-cols-[2fr,1fr] 
-      gap-10 
+      gap-10
       w-full 
       md:max-w-[1700px]"
       >
@@ -45,7 +48,7 @@ const HeroContent = () => {
             BORDERED
             text-[#b49bff] 
             mr-[10px] 
-            h-5 
+            h-5
             w-5"
             />
             <h1
@@ -145,7 +148,6 @@ const HeroContent = () => {
                 left: 10,
                 filter: "blur(100px)",
                 position: "relative",
-                zIndex: "-2",
               }}
             />
             <img
@@ -160,7 +162,6 @@ const HeroContent = () => {
                 left: 1,
                 width: "100%",
                 height: "100%",
-                zIndex: "-2",
               }}
             />
           </div>
