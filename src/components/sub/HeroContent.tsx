@@ -3,7 +3,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const HeroContent = () => {
   return (
-    <div
+      <div
       className="
       HERO_WRAPPER
       flex 
@@ -16,8 +16,7 @@ const HeroContent = () => {
       md:mt-40
       md:px-10  
       lg:px-20 
-      lg:mt-40
-
+      lg:mt-44
       w-full"
     >
       <div
@@ -27,7 +26,8 @@ const HeroContent = () => {
       md:grid-cols-[2fr,1fr] 
       gap-10
       w-full 
-      md:max-w-[1700px]"
+      md:max-w-[1700px]
+      "
       >
         <div className="flex flex-col gap-5 justify-center text-start">
           <div
@@ -135,7 +135,9 @@ const HeroContent = () => {
           flex 
           justify-center 
           items-center 
-          z-[-2]"
+          z-[-2]
+          scale
+          "
         >
           <div style={{ position: "relative" }}>
             <img
@@ -168,6 +170,8 @@ const HeroContent = () => {
         </div>
       </div>
     </div>
+    
+    
   );
 };
 

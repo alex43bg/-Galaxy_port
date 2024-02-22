@@ -29,6 +29,7 @@ const Technologies = () => {
       md:px-10  
       lg:px-20 
       mt-20
+      scale
       "
       >
         <div

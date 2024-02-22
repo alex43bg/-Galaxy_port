@@ -2,28 +2,34 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div
+    <div className='mx-auto'>
+      <div
       className="
     WRAPPER
-    w-full 
+    mx-auto
+    fixed
+    top-0
+    left-0
+    right-0
+    mx-auto
     h-[65px] 
-    fixed 
-    top-0 
     shadow-lg 
     shadow-[#2A0E61]/50 
     bg-[#03001417] 
     backdrop-blur-md 
     z-50 
-    px-10
     flex 
     justify-between 
-    items-center"
+    items-center
+    max-w-[1920px]
+    "
     >
-      <div className="flex-grow flex justify-center items-center">
+      <div className="flex-grow flex justify-center items-center mx-auto">
         <a
           href="#"
           className="
         NAME
+        mx-auto
         font-bold 
         absolute 
         sm:left-10
@@ -48,7 +54,8 @@ const Navbar = () => {
         w-[300px] 
         md:w-[450px] 
         flex 
-        justify-between"
+        justify-between
+        "
         >
           <div
             className="
@@ -77,6 +84,8 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 

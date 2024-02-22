@@ -7,11 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-import slide_image_1 from "../../public/th.png";
-import slide_image_2 from "../../public/1.png";
-import slide_image_3 from "../../public/2.png";
-import slide_image_4 from "../../public/3.png";
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 let width = "w-[1000px]";
 
 function Slider() {
@@ -29,16 +25,16 @@ function Slider() {
           onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide>
-            <img src={slide_image_1} alt="slide_image" className={`${width}`} />
+            <img src="./assets/images/th.png" alt="slide_image" className={`${width}`} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_2} alt="slide_image" className={`${width}`} />
+            <img src="./assets/images/1.png" alt="slide_image" className={`${width}`} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_3} alt="slide_image" className={`${width}`} />
+            <img src="./assets/images/2.png" alt="slide_image" className={`${width}`} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_4} alt="slide_image" className={`${width}`} />
+            <img src="./assets/images/3.png" alt="slide_image" className={`${width}`} />
           </SwiperSlide>
         </Swiper>
       </div>
