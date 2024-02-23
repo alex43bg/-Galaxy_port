@@ -27,6 +27,7 @@ export default {
         'flip-in-hor-bottom': 'flip-in-hor-bottom 1.2s ease-out',
         'fade-in-left': 'fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both',
         'fade-in-right': 'fade-in-right 1.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both',
+        
       },
       keyframes: {
         customFadeIn: {

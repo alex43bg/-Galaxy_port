@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import "../src/index.css"
 import Hero from "./components/main/Hero"
 import Navbar from "./components/main/Navbar"
@@ -9,15 +9,11 @@ import Navbar from "./components/main/Navbar"
 import Card from "./components/main/Card"
 import Slider from "./components/main/Slider"
 import Technologies from "./components/main/Technologies"
-import StarBackground from "../src/components/main/StarBackground";
-import Button_canvas from './components/main/Button_canvas'
+import StarBackground from "./components/main/StarBackground";
 
 function App() {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  const [isStarBackgroundVisible, setIsStarBackgroundVisible] = useState(true);
-  const toggleStarBackground = () => {
-    setIsStarBackgroundVisible(!isStarBackgroundVisible);
-  };
+
  
   const userAgent = navigator.userAgent;
   const isSafari = userAgent.includes('Safari') && !userAgent.includes('Chrome');
@@ -29,14 +25,12 @@ function App() {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   return (
     <>
-      {/* {!isNonMobileSafari && <StarBackground />} */}
+      {!isNonMobileSafari && <StarBackground />}
       <Navbar />
       <Hero />
       <Technologies />
       <Slider />
       <Card />
-      <Button_canvas toggleStarBackground={toggleStarBackground} />
-      {!isNonMobileSafari && isStarBackgroundVisible && <StarBackground />}
       {/* <Skills /> */}
       {/* <Encryption /> */}
       {/* <Footer /> */}
@@ -45,3 +39,4 @@ function App() {
 }
 
 export default App;
+

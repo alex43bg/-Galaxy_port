@@ -1,7 +1,9 @@
 import React from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+// import { ScroolTrigger,  ScroolSmoother} from "gsap";
 
 const HeroContent = () => {
+  
   return (
       <div
       className="
@@ -136,7 +138,6 @@ const HeroContent = () => {
           justify-center 
           items-center 
           z-[-2]
-          scale
           "
         >
           <div style={{ position: "relative" }}>

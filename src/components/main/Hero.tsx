@@ -3,7 +3,15 @@ import HeroContent from "../sub/HeroContent";
 
 const Hero = () => {
   return (
-    <div className="relative flex max-w-[1920px] mx-auto" id="about-me">
+    <div
+      className="
+      mx-auto
+      relative 
+      flex 
+      max-w-[1920px] 
+    "
+      id="about-me"
+    >
       <video
         autoPlay
         muted

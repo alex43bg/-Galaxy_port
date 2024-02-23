@@ -29,18 +29,20 @@ const Technologies = () => {
       md:px-10  
       lg:px-20 
       mt-20
-      scale
+      animate-nice-scroll-img
       "
       >
         <div
           className="
-          animate-custom-fade-in
+          animate-nice-scroll-img
           w-full 
           h-full 
           flex 
           justify-center 
           items-center 
-          z-[-2]"
+          z-[-2]
+          
+          "
         >
           <img src="./assets/images/th.png" alt="Technologies" />
         </div>

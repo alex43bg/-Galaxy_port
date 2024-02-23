@@ -25,16 +25,32 @@ function Slider() {
           onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide>
-            <img src="./assets/images/th.png" alt="slide_image" className={`${width}`} />
+            <img
+              src="./assets/images/th.png"
+              alt="slide_image"
+              className={`${width}`}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="./assets/images/1.png" alt="slide_image" className={`${width}`} />
+            <img
+              src="./assets/images/1.png"
+              alt="slide_image"
+              className={`${width}`}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="./assets/images/2.png" alt="slide_image" className={`${width}`} />
+            <img
+              src="./assets/images/2.png"
+              alt="slide_image"
+              className={`${width}`}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="./assets/images/3.png" alt="slide_image" className={`${width}`} />
+            <img
+              src="./assets/images/3.png"
+              alt="slide_image"
+              className={`${width}`}
+            />
           </SwiperSlide>
         </Swiper>
       </div>
