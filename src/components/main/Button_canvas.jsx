@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 const Button_canvas = ({ toggleStarBackground }) => {
   return (
     <>
-      <div className="fixed top-20 left-[1900px] z-1000 text-gray-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-300">
-        <button onClick={toggleStarBackground}>*</button>
+      <div className="fixed top-12 left-[1900px] text-[#676767]">
+        <button onClick={toggleStarBackground}>.</button>
       </div>
     </>
   );
