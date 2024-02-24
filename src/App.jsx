@@ -2,15 +2,18 @@ import { useState } from 'react'
 import "../src/index.css"
 import Hero from "./components/main/Hero"
 import Navbar from "./components/main/Navbar"
-// import Footer from "./components/main/Footer";
+
 // import Encryption from './components/main/Encryption'
 // import Skills from './components/main/Skills'
 // import Test from './components/main/Test';
-import Card from "./components/main/Card"
+import StarBackground from "../src/components/main/StarBackground"
+import Button_canvas from './components/main/Button_canvas'
+import EvervaultCardDemo from "./components/main/CardHover/CardHover"
+import Pin from './components/main/Pin/Pin'
 import Slider from "./components/main/Slider"
 import Technologies from "./components/main/Technologies"
-import StarBackground from "../src/components/main/StarBackground";
-import Button_canvas from './components/main/Button_canvas'
+
+// import ThreeDCardDemo from "./components/main/Card-3dTest"
 
 function App() {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,14 +32,17 @@ function App() {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   return (
     <>
-      {/* {!isNonMobileSafari && <StarBackground />} */}
+      {!isNonMobileSafari && isStarBackgroundVisible && <StarBackground />}
+      
+
       <Navbar />
       <Hero />
       <Technologies />
       <Slider />
-      <Card />
+      <Pin />
+      <EvervaultCardDemo />
       <Button_canvas toggleStarBackground={toggleStarBackground} />
-      {!isNonMobileSafari && isStarBackgroundVisible && <StarBackground />}
+      
       {/* <Skills /> */}
       {/* <Encryption /> */}
       {/* <Footer /> */}

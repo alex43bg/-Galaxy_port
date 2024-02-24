@@ -44,7 +44,7 @@ const Technologies = () => {
           
           "
         >
-          <img src="./assets/images/th.png" alt="Technologies" />
+          <img src="./assets/images/th.png" alt="Technologies" className="md:w-1/2 h-auto"/>
         </div>
       </div>
     </>
