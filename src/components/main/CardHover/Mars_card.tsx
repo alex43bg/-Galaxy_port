@@ -3,7 +3,7 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { cn } from "../../../utils/cn";
 
-export const EvervaultCard = ({
+export const MarsCard = ({
   text,
   className,
 }: {
@@ -49,7 +49,7 @@ export const EvervaultCard = ({
           <div className="relative h-44 w-44  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="absolute w-full h-full bg-white/[0.8] dark:bg-[#000000] blur-sm rounded-full" />
             <img
-              src="assets/images/Moon.png"
+              src="assets/images/Sun.png"
               alt="#"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -64,7 +64,7 @@ export const EvervaultCard = ({
             bg-gradient-to-r 
             from-[#ffff] 
             to-[#9457EB]
-            
+            z-20
             "
             >
               {text}
@@ -100,7 +100,7 @@ export function CardPattern({ mouseX, mouseY, randomString }: any) {
 }
 
 const characters =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  "Mars";
 export const generateRandomString = (length: number) => {
   let result = "";
   for (let i = 0; i < length; i++) {
@@ -108,5 +108,4 @@ export const generateRandomString = (length: number) => {
   }
   return result;
 };
-
 

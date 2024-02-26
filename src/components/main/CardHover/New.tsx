@@ -3,7 +3,7 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { cn } from "../../../utils/cn";
 
-export const EvervaultCard = ({
+export const New = ({
   text,
   className,
 }: {
@@ -49,7 +49,7 @@ export const EvervaultCard = ({
           <div className="relative h-44 w-44  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="absolute w-full h-full bg-white/[0.8] dark:bg-[#000000] blur-sm rounded-full" />
             <img
-              src="assets/images/Moon.png"
+              src="assets/images/Mars2.png"
               alt="#"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -64,7 +64,7 @@ export const EvervaultCard = ({
             bg-gradient-to-r 
             from-[#ffff] 
             to-[#9457EB]
-            
+            z-20
             "
             >
               {text}
@@ -109,4 +109,18 @@ export const generateRandomString = (length: number) => {
   return result;
 };
 
-
+export const Icon = ({ className, ...rest }: any) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className={className}
+      {...rest}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
+    </svg>
+  );
+};

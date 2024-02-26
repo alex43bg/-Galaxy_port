@@ -10,7 +10,8 @@ import StarBackground from "../src/components/main/StarBackground"
 import Button_canvas from './components/main/Button_canvas'
 import EvervaultCardDemo from "./components/main/CardHover/CardHover"
 import Pin from './components/main/Pin/Pin'
-import Slider from "./components/main/Slider"
+// import Slider from "./components/main/Slider"
+
 import Technologies from "./components/main/Technologies"
 
 // import ThreeDCardDemo from "./components/main/Card-3dTest"
@@ -38,7 +39,8 @@ function App() {
       <Navbar />
       <Hero />
       <Technologies />
-      <Slider />
+     
+      {/* <Slider /> */}
       <Pin />
       <EvervaultCardDemo />
       <Button_canvas toggleStarBackground={toggleStarBackground} />

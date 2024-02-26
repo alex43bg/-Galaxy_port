@@ -5,7 +5,7 @@ import { PinContainer } from "./PinContainer"
 function Pin() {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-[300px]">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-[150px] mb-[150px]">
         <div className="h-[40rem] w-full flex items-center justify-center ">
           <PinContainer
             title="Click on point)"

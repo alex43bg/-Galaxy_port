@@ -11,13 +11,12 @@ const Navbar = () => {
     top-0
     left-0
     right-0
-    mx-auto
     h-[65px] 
     shadow-lg 
     shadow-[#2A0E61]/50 
     bg-[#03001417] 
     backdrop-blur-md 
-    z-50 
+    z-[1000] 
     flex 
     justify-between 
     items-center
