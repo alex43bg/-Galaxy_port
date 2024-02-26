@@ -35,7 +35,7 @@ const Technologies = () => {
         <div
           className="
           animate-nice-scroll-img
-          w-full 
+          w-full
           h-full 
           flex 
           justify-center 
@@ -44,7 +44,7 @@ const Technologies = () => {
           
           "
         >
-          <img src="./assets/images/th.png" alt="Technologies" className="md:w-1/2 h-auto"/>
+          <img src="./assets/images/th.png" alt="Technologies" className="h-auto md:h-[580px]"/>
         </div>
       </div>
     </>

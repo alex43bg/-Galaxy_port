@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className='mx-auto'>
       <div
       className="
-    WRAPPER
+    WRAPPER NAVBAR
     mx-auto
     fixed
     top-0
