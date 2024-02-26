@@ -9,7 +9,18 @@ import { New } from './New'
 function CardHover() {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-4 mt-[150px] mb-[1500px]">
+      <div className="
+      grid 
+      grid-cols-1 
+      sm:grid-cols-2 
+      md:grid-cols-2 
+      lg:grid-cols-3  
+      gap-4 
+      mt-[150px] 
+      mb-[150px] 
+      max-w-[1920px] 
+      mx-auto
+      ">
         <div className="p-4">
           <div className="mt-[50px] mb-[50px] border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             
