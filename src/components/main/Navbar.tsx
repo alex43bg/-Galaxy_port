@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className='mx-auto'>
+    <div className="mx-auto">
       <div
-      className="
+        className="
     WRAPPER NAVBAR
     mx-auto
     fixed
@@ -22,11 +22,11 @@ const Navbar = () => {
     items-center
     max-w-[1920px]
     "
-    >
-      <div className="flex-grow flex justify-center items-center mx-auto">
-        <a
-          href="#"
-          className="
+      >
+        <div className="flex-grow flex justify-center items-center mx-auto">
+          <a
+            href="#"
+            className="
         NAME
         mx-auto
         font-bold 
@@ -44,20 +44,20 @@ const Navbar = () => {
         bg-gradient-to-r 
         from-purple-500 
         to-cyan-300"
-        >
-          Alexander Bilik
-        </a>
-        <div
-          className="
+          >
+            Alexander Bilik
+          </a>
+          <div
+            className="
         NAV_MENU
         w-[300px] 
         md:w-[450px] 
         flex 
         justify-between
         "
-        >
-          <div
-            className="
+          >
+            <div
+              className="
           flex 
           items-center 
           justify-between 
@@ -71,20 +71,45 @@ const Navbar = () => {
           py-[10px] 
           rounded-full 
           text-gray-200"
-          >
-            <a href="#skills" className="cursor-pointer">
-              Skills
-            </a>
+            >
+              <a href="#skills" className="cursor-pointer">
+                Skills
+              </a>
 
-            <a href="#projects" className="cursor-pointer">
-              Projects
+              <a href="#projects" className="cursor-pointer">
+                Projects
+              </a>
+            </div>
+          </div>
+
+          <div
+            className="
+        ICONS 
+        absolute 
+        right-[50px] 
+        sm:flex 
+        gap-x-7
+        hidden 
+        "
+          >
+            <a href="https://www.codewars.com/users/Alex43bg" target="_blank">
+              <img
+                src="./assets/images/codewars.png"
+                alt="Codewars_image"
+                className="w-[25px] h-[25px] rounded-[8px]"
+              />
+            </a>
+            <a href="https://github.com/alex43bg" target="_blank">
+              <img
+                src="./assets/images/gitwhite.png"
+                alt="Codewars_image"
+                className="w-[25px] h-[25px]"
+              />
             </a>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    
   );
 };
 
