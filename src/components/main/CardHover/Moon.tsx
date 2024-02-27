@@ -46,12 +46,12 @@ export const Moon = ({
           randomString={randomString}
         />
         <div className="relative z-10 flex items-center justify-center">
-          <div className="relative h-44 w-44  rounded-full flex items-center justify-center text-white font-bold text-4xl">
-            <div className="absolute w-full h-full bg-white/[0.8] dark:bg-[#000000] blur-sm rounded-full" />
+          <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
+            <div className="" />
             <img
               src="assets/images/Moon1.png"
               alt="#"
-              className="absolute inset-0 w-full h-full object-cover scale-[1.2]"
+              className="absolute object-cover scale-[1]"
             />
             <span
               className="	

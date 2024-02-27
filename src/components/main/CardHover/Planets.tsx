@@ -42,9 +42,9 @@ function Planets() {
           
           "
           >
-            <Earth text="Alex" />
+            <Earth text="React projects" />
 
-            <h2 className="dark:text-white mt-1 text-sm font-light mb-4">
+            <h2 className="dark:text-white mt-1 text-sm font-light mb-2">
               Hover over this card to reveal an awesome effect. Running out of
               copy here.
             </h2>
@@ -68,7 +68,7 @@ function Planets() {
         </div>
         <div className="p-4">
           <div className="mt-[50px] mb-[50px] border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Sun text="New project" />
+            <Sun text="3D projects" />
 
             <h2
               className="
@@ -114,7 +114,7 @@ function Planets() {
         </div>
         <div className="p-4">
           <div className="mt-[50px] mb-[50px] border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-            <Moon text="New project" />
+            <Moon text="Cool design projects" />
 
             <h2 className="dark:text-white mt-1 text-sm font-light mb-4">
               Hover over this card to reveal an awesome effect. Running out of
