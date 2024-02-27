@@ -8,8 +8,8 @@ import Navbar from "./components/main/Navbar"
 // import Test from './components/main/Test';
 import StarBackground from "../src/components/main/StarBackground"
 import Button_canvas from './components/main/Button_canvas'
-import EvervaultCardDemo from "./components/main/CardHover/CardHover"
-import Pin from './components/main/Pin/Pin'
+import Planets from "./components/main/CardHover/Planets"
+// import Pin from './components/main/Pin/Pin'
 // import Slider from "./components/main/Slider"
 
 import Technologies from "./components/main/Technologies"
@@ -41,8 +41,8 @@ function App() {
       <Technologies />
      
       {/* <Slider /> */}
-      <Pin />
-      <EvervaultCardDemo />
+      {/* <Pin /> */}
+      <Planets />
       <Button_canvas toggleStarBackground={toggleStarBackground} />
       
       {/* <Skills /> */}

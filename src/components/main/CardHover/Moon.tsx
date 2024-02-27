@@ -3,7 +3,7 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { cn } from "../../../utils/cn";
 
-export const New = ({
+export const Moon = ({
   text,
   className,
 }: {
@@ -49,9 +49,9 @@ export const New = ({
           <div className="relative h-44 w-44  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="absolute w-full h-full bg-white/[0.8] dark:bg-[#000000] blur-sm rounded-full" />
             <img
-              src="assets/images/Mars2.png"
+              src="assets/images/Moon1.png"
               alt="#"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover scale-[1.2]"
             />
             <span
               className="	

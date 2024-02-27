@@ -3,7 +3,7 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { cn } from "../../../utils/cn";
 
-export const MarsCard = ({
+export const Sun = ({
   text,
   className,
 }: {
@@ -51,7 +51,7 @@ export const MarsCard = ({
             <img
               src="assets/images/Sun.png"
               alt="#"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-auto scale-[1.5] object-cover"
             />
             <span
               className="	
@@ -64,7 +64,7 @@ export const MarsCard = ({
             bg-gradient-to-r 
             from-[#ffff] 
             to-[#9457EB]
-            z-20
+            
             "
             >
               {text}
@@ -100,7 +100,7 @@ export function CardPattern({ mouseX, mouseY, randomString }: any) {
 }
 
 const characters =
-  "Mars";
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 export const generateRandomString = (length: number) => {
   let result = "";
   for (let i = 0; i < length; i++) {
@@ -108,4 +108,5 @@ export const generateRandomString = (length: number) => {
   }
   return result;
 };
+
 

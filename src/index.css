@@ -64,4 +64,21 @@ html {
       opacity: 1;
     }
   }
+
+ 
+  .run_text_infinite {
+    width: 100%;
+    animation: runletters 50s linear infinite;
+  }
+
+  @keyframes runletters {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(calc(-100% - 1500px));
+    }
+  }
+/*////////////////////////////////////////////////////////////////////////*/
 }
+ 
