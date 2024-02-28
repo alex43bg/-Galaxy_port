@@ -41,7 +41,7 @@ const Text_animations = () => {
             opacity-90
             "
         >
-          Next.js•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js•
+          Next.js•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js•Nextjs•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js•
         </h1>
       </div>
       <div className='mt-[30px]'>
