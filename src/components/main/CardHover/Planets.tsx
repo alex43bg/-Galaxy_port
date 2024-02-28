@@ -91,7 +91,7 @@ function Planets() {
                 It's the art of turning ideas into reality, creating convenient
                 tools to solve complex problems, and constantly learning and
                 improving. When you program, you embody your dreams in a virtual
-                world where limitations depend only on your imagination...
+                world where limitations depend only on your imagination..........
               </div>
         
             </h2>
