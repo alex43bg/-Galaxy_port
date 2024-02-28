@@ -65,7 +65,7 @@ html {
     }
   }
 
- 
+ /* ////////////////////////////////////////////////////////////////////////// */
   .run_text_infinite {
     width: 100%;
     animation: runletters 50s linear infinite;
@@ -79,6 +79,34 @@ html {
       transform: translateX(calc(-100% - 1500px));
     }
   }
+
+  .run_text_infinite_b {
+    width: 100%;
+    animation: runletters_b 50s linear infinite;
+  }
+
+  @keyframes runletters_b {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(100% - 1500px));
+    }
+  }
+/* /////////////////////////////////////////////////////////////////////// */
+  .rotation_sun {
+    animation: rotateAndScale 70s linear infinite;
+  }
+  
+  @keyframes rotateAndScale {
+    0% {
+      transform: rotate(0deg) scale(0.85);
+    }
+    100% {
+      transform: rotate(360deg) scale(0.85);
+    }
+  }
+  
 /*////////////////////////////////////////////////////////////////////////*/
 }
  
