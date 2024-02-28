@@ -88,7 +88,7 @@ const Navbar = () => {
         absolute 
         right-[50px] 
         sm:flex 
-        gap-x-7
+        gap-x-3
         hidden 
         "
           >

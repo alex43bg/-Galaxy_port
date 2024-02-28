@@ -51,7 +51,7 @@ export const Sun = ({
             <img
               src="assets/images/Sun.png"
               alt="#"
-              className="absolute object-cover scale-[0.9]"
+              className="absolute object-cover scale-[0.8] rotation_sun"
             />
             <span
               className="	
@@ -77,7 +77,7 @@ export const Sun = ({
 };
 
 export function CardPattern({ mouseX, mouseY, randomString }: any) {
-  let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  let maskImage = useMotionTemplate`radial-gradient(300px at ${mouseX}px ${mouseY}px, white, transparent)`;
   let style = { maskImage, WebkitMaskImage: maskImage };
 
   return (

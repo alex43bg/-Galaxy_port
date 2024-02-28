@@ -44,7 +44,7 @@ function Planets() {
           >
             <Earth text="React projects" />
 
-            <h2 className="dark:text-white mt-1 text-sm font-light mb-2">
+            <h2 className="text-white mt-1 text-sm font-light mb-2">
               Hover over this card to reveal an awesome effect. Running out of
               copy here.
             </h2>
@@ -72,18 +72,17 @@ function Planets() {
 
             <h2
               className="
-            dark:text-white 
+          text-white 
             mt-1
             h-[25px]
             text-sm 
             font-light 
             mb-5 
-            truncate 
-            max-w-[300px] 
-            sm:max-w-[340px] 
+            truncate
+            max-w-[300px]   
+            sm:max-w-[290px] 
+            lg:max-w-[340px] 
             mx-auto
-         
-            
             "
             >
               <div className="run_text_infinite">
@@ -116,7 +115,7 @@ function Planets() {
           <div className="mt-[50px] mb-[50px] border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Moon text="Cool design projects" />
 
-            <h2 className="dark:text-white mt-1 text-sm font-light mb-4">
+            <h2 className="text-white mt-1 text-sm font-light mb-4">
               Hover over this card to reveal an awesome effect. Running out of
               copy here.
             </h2>
