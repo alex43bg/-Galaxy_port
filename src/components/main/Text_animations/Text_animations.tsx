@@ -29,7 +29,7 @@ const Text_animations = () => {
             opacity-90
             "
         >
-          React•React•React•React•React•<span className='text-[#29D8FF]'>React•</span>React•React•React•React•
+          React•React•React•React•React•<span className='text-[#29D8FF]'>React•</span>React•React•React•React
         </h1>
       </div>
       <div className='mt-[30px]'>
