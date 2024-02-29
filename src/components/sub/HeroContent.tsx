@@ -19,7 +19,8 @@ const HeroContent = () => {
       md:px-10  
       lg:px-20 
       lg:mt-44
-      w-full"
+      w-full
+      "
     >
       <div
         className="
@@ -108,10 +109,10 @@ const HeroContent = () => {
             my-5 
             max-w-[600px]"
           >
-            "I am a frontend developer with a passion for creating impressive
+            I am a frontend developer with a passion for creating impressive
             and intuitively understandable interfaces. My task is to turn
             complexity into simplicity, creating aesthetic and functional web
-            applications that everyone can use comfortably."
+            applications that everyone can use comfortably.
           </p>
           <a
             className="

@@ -9,6 +9,7 @@ const Hero = () => {
       relative 
       flex 
       max-w-[1920px] 
+      mb-[200px]
     "
       id="about-me"
     >
