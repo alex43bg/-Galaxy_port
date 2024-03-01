@@ -13,7 +13,9 @@ import Planets from "./components/main/CardHover/Planets";
 // import Slider from "./components/main/Slider"
 
 import Technologies from "./components/main/Technologies";
-import Text_animations from "./components/main/Text_animations/Text_animations";
+// import Text_animations from "./components/main/Text_animations/Text_animations";
+import Run_text from './components/main/Run_text'
+
 
 // import ThreeDCardDemo from "./components/main/Card-3dTest"
 
@@ -39,9 +41,10 @@ function App() {
 
       <Navbar />
       <Hero />
-      <Text_animations />
+      {/* <Text_animations /> */}
       <Technologies />
-      <Text_animations />
+      
+      <Run_text />
       {/* <Slider /> */}
       {/* <Pin /> */}
       <Planets />
