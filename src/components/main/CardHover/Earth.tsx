@@ -38,7 +38,7 @@ export const Earth = ({
     >
       <div
         onMouseMove={onMouseMove}
-        className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
+        // className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
       >
         <CardPattern
           mouseX={mouseX}
@@ -48,11 +48,18 @@ export const Earth = ({
         <div className="relative z-10 flex items-center justify-center">
           <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="" />
-            <img
-              src="assets/images/ER22.png"
-              alt="#"
-              className="absolute object-cover scale-[0.8]"
-            />
+            <div className="rounded-full overflow-hidden w-[200px] absolute">
+              <video
+                autoPlay
+                muted
+                loop
+                disablePictureInPicture
+                disableRemotePlayback
+                className=" rounded-full mx-auto overflow-hidden"
+              >
+                <source src="assets/images/ERS.mp4" type="video/mp4" />
+              </video>
+            </div>
             <span
               className="	
             mb-[290px]
@@ -108,4 +115,3 @@ export const generateRandomString = (length: number) => {
   }
   return result;
 };
-

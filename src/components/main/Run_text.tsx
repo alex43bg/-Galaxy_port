@@ -3,8 +3,9 @@ import Marquee from "react-fast-marquee";
 function Run_text() {
   return (
     <>
-      <Marquee speed={15} pauseOnHover direction="right">
-        <section className="max-w-[1900px] mt-[50px]">
+    <div className='max-w-[1920px] mx-auto overflow-hidden'>
+    <Marquee speed={15} pauseOnHover direction="right">
+        <section className="">
           <div className="flex items-center text-[#334155] text-4xl whitespace-nowrap">
             <div>
               <span className="text-[#29D8FF]">React • </span>
@@ -36,6 +37,8 @@ function Run_text() {
           </div>
         </section>
       </Marquee>
+    </div>
+      
     </>
   );
 }

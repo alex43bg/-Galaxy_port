@@ -13,11 +13,13 @@ import Planets from "./components/main/CardHover/Planets";
 // import Slider from "./components/main/Slider"
 
 import Technologies from "./components/main/Technologies";
+import D3dCard from './components/D3dCard'
 // import Text_animations from "./components/main/Text_animations/Text_animations";
-import Run_text from './components/main/Run_text'
+// import Run_text from './components/main/Run_text'
 
 
 // import ThreeDCardDemo from "./components/main/Card-3dTest"
+// import CssSlider from './components/cssSlider';
 
 function App() {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,11 +45,11 @@ function App() {
       <Hero />
       {/* <Text_animations /> */}
       <Technologies />
-      
-      <Run_text />
+      {/* <D3dCard /> */}
+      {/* <CssSlider /> */}
+      {/* <Run_text /> */}
       {/* <Slider /> */}
       {/* <Pin /> */}
-      <Planets />
       <Planets />
 
       <Button_canvas toggleStarBackground={toggleStarBackground} />

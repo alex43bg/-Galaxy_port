@@ -47,6 +47,10 @@ const Navbar = () => {
           >
             Alexander Bilik
           </a>
+          <div className='text-[16px] absolute sm:left-[245px]'>
+          🇺🇦
+          </div>
+
           <div
             className="
         NAV_MENU
@@ -54,6 +58,7 @@ const Navbar = () => {
         md:w-[450px] 
         flex 
         justify-between
+       
         "
           >
             <div
@@ -66,11 +71,11 @@ const Navbar = () => {
           border 
           border-[#7042f861] 
           bg-[#0300145e] 
-          mr-[15px] 
           px-[20px] 
           py-[10px] 
           rounded-full 
-          text-gray-200"
+          text-gray-200
+          "
             >
               <a href="#skills" className="cursor-pointer">
                 Skills
@@ -90,6 +95,7 @@ const Navbar = () => {
         sm:flex 
         gap-x-3
         hidden 
+       
         "
           >
             <a href="https://www.codewars.com/users/Alex43bg" target="_blank">
@@ -106,6 +112,7 @@ const Navbar = () => {
                 className="w-[25px] h-[25px]"
               />
             </a>
+            
           </div>
         </div>
       </div>

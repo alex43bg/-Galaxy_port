@@ -38,7 +38,7 @@ export const Moon = ({
     >
       <div
         onMouseMove={onMouseMove}
-        className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
+        // className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
       >
         <CardPattern
           mouseX={mouseX}
@@ -51,7 +51,7 @@ export const Moon = ({
             <img
               src="assets/images/Moon1.png"
               alt="#"
-              className="absolute object-cover scale-[1]"
+              className="absolute object-cover scale-[1] rotation_sun"
             />
             <span
               className="	
