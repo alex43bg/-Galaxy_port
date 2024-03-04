@@ -45,7 +45,7 @@ function App() {
       <Hero />
       {/* <Text_animations /> */}
       <Technologies />
-      {/* <D3dCard /> */}
+      <D3dCard />
       {/* <CssSlider /> */}
       {/* <Run_text /> */}
       {/* <Slider /> */}

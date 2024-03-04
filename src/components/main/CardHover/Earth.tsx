@@ -29,6 +29,7 @@ export const Earth = ({
     setRandomString(str);
   }
 
+
   return (
     <div
       className={cn(
@@ -48,13 +49,12 @@ export const Earth = ({
         <div className="relative z-10 flex items-center justify-center">
           <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="" />
-            <div className="rounded-full overflow-hidden w-[200px] absolute">
+            <div className="rounded-full overflow-hidden w-[200px] absolute hidden md:block">
               <video
                 autoPlay
                 muted
                 loop
                 disablePictureInPicture
-                disableRemotePlayback
                 className=" rounded-full mx-auto overflow-hidden"
               >
                 <source src="assets/images/ERS.mp4" type="video/mp4" />

@@ -23,7 +23,7 @@ function Planets() {
       mx-auto
       "
       >
-        <div className="p-4">
+        <div className="Earth-Start p-4">
           <div
             className="
           mt-[50px] 
@@ -66,7 +66,7 @@ function Planets() {
             </a>
           </div>
         </div>
-        <div className="p-4">
+        <div className="SUN-START p-4">
           <div className="mt-[50px] mb-[50px] border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Sun text="3D projects" />
 
@@ -111,7 +111,7 @@ function Planets() {
             </a>
           </div>
         </div>
-        <div className="p-4">
+        <div className="Earth-Moon  p-4">
           <div className="mt-[50px] mb-[50px] border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Moon text="Cool design projects" />
 

@@ -36,7 +36,7 @@ const Hero = () => {
         max-w-[1920px]
         "
       >
-        <source src="assets/images/blackhole.webm" type="video/webm" />
+        <source src="assets/images/blackhole.mp4" type="video/mp4" />
       </video>
       <HeroContent />
     </div>
