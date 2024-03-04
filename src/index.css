@@ -122,50 +122,133 @@ html {
       transform: rotate(360deg) scale(0.85);
     }
   }
-
-  .circle {
-    background: #9457eb;
-    border: 1px solid #50c878;
-    border-radius: 50%;
-    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
-    height: 15px;
-    width: 15px;
-  }
-
-  #controls{
-    margin: -130px;
-    width: 100%;
-    height: 50%;
-    z-index: 100;
+/* //////////////////////////////////////////////////////////////////// */
+  .container{
     position: relative;
+    width: 400px;
+    height: 500px;
+    padding: 40px 40px 0 40px;
+    border-radius:10px;
+    z-index: 1111;
+    transition: 0.3s;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    margin: 0 auto;
   }
-  #controls label {
-    transition: opacity 0.2s ease-out;
-    display: none;
-    width: 50px;
-    height: 50px;
-    opacity: .4;
+  .container:hover{
+    padding: 40px;
   }
-  #controls label:hover{
-    opacity: 1;
+  .imgbox{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    transform: translateZ(50px);
   }
-  #slide1:checked
-    ~ #controls
-    label:nth-child(2)
-    #slide1:checked
-    ~ #controls
-    label:nth-child(3)
-    #slide1:checked
-    ~ #controls
-    label:nth-child(4)
-    #slide1:checked
-    ~ #controls
-    label:nth-child(1) {
-    background: url(https://cdn-icons-png.flaticon.com/512/13110/13110964.png)
-      no-repeat;
-    float: right;
-    display: block;
+  .imgC{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    transform: scale(0.9);
+    transition: 0.3s ease-in;
+    object-fit: cover;
+  }
+  .object{
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    background: radial-gradient(#ff0000, tomato);
+    border-radius: 50%;
+    top: 10%;
+    left: 15%;
+    transition: 0.3s ease-in;
   }
 
+  .container:hover .object{
+    height: 290px;
+    width: 290px;
+  }
+
+  .container:hover .imgbox .imgC{
+    transform: scale(1);
+  }
+
+  .bgtext{
+    position: absolute;
+    font-size: 6em;
+    font-weight: 800;
+    top: 50%;
+    -webkit-text-stroke: 1px #fff;
+    opacity: 0.4;
+    color: transparent;
+    z-index: -1;
+  }
+  .title{
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    word-spacing: 2px;
+    transition: 0.3s ease;
+    transform: translateZ(50px);
+  }
+  .container:hover .title {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .buySection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    transform: translateZ(50px);
+    color: #fff;
+  }
+
+  .buySection h2{
+   font-size: 1.6em;
+   transition: 0.3s;
+   transform: translateY(100px);
+   color: #fff;
+  }
+  .buySection .sup{
+    font-size: 1.8em;
+    font-weight: 300;
+ 
+   }
+   .buySection .sp{
+    font-size: 0.8em;
+    font-weight: 600;
+   }
+   .buySection .button{
+    color: #FDF5E6;
+    padding-top: 0.5rem; /* 2*0.25rem = 0.5rem */
+    padding-bottom: 0.5rem; /* 2*0.25rem = 0.5rem */
+    background-color: blue; /* Замініть на власний колір */
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.5rem; /* 2*0.25rem = 0.5rem */
+    transform: translateY(100px);
+   }
+   .container:hover .buySection {
+    margin-top: 25px;
+  }
+  .container:hover .buySection h2{
+    transition-delay: 0.4s;
+    transform: translateY(0);
+  }
+  .container:hover .buySection .button{
+    transition-delay: 0.4s;
+    transform: translateY(0);
+  }
+
+  .imgC , .objblue {
+    filter: hue-rotate(230deg);
+  }
+  
   /*////////////////////////////////////////////////////////////////////////*/
 }
