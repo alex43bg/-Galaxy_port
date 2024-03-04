@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "./CardSourseCode";
+import { CardBody, CardContainer, CardItem } from "../main/CardSourseCode";
 
 export function ThreeDCardDemo() {
   return (

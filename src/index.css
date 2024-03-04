@@ -143,17 +143,15 @@ html {
     width: 150px;
     height: 150px;
     z-index: 1;
-    transform: translateZ(50px);
+    transform: translateZ(5px);
   }
   .imgC{
     position: absolute;
-    height: 150px;
-    width: 150px;
     transform: scale(0.9);
     transition: 0.3s ease-in;
     object-fit: cover;
   }
-  .object{
+  .circle{
     position: absolute;
     height: 220px;
     width: 220px;
@@ -164,7 +162,7 @@ html {
     transition: 0.3s ease-in;
   }
 
-  .container:hover .object{
+  .container:hover .circle{
     height: 290px;
     width: 290px;
   }
@@ -173,7 +171,8 @@ html {
     transform: scale(1);
   }
 
-  .bgtext{
+  .Earthtext{
+    margin-top: 30px;
     position: absolute;
     font-size: 6em;
     font-weight: 800;
@@ -201,21 +200,25 @@ html {
   .buySection{
     display: flex;
     justify-content: space-between;
-    margin-top: 0;
     overflow: hidden;
     transition: all 0.3s;
-    transform: translateZ(50px);
+    transform: translateZ(100px);
     color: #fff;
   }
 
-  .buySection h2{
+  .buySection .price{
+   margin-top: 120px;
+   margin-left: 20px;
    font-size: 1.6em;
    transition: 0.3s;
    transform: translateY(100px);
    color: #fff;
+
+
   }
   .buySection .sup{
-    font-size: 1.8em;
+    margin-top: 120px;
+    font-size: 0.7em;
     font-weight: 300;
  
    }
@@ -224,6 +227,10 @@ html {
     font-weight: 600;
    }
    .buySection .button{
+    width: 120px;
+    margin-top: 120px;
+    margin-left: 15px;
+    margin-right: 15px;
     color: #FDF5E6;
     padding-top: 0.5rem; /* 2*0.25rem = 0.5rem */
     padding-bottom: 0.5rem; /* 2*0.25rem = 0.5rem */
@@ -237,7 +244,7 @@ html {
    .container:hover .buySection {
     margin-top: 25px;
   }
-  .container:hover .buySection h2{
+  .container:hover .buySection .price{
     transition-delay: 0.4s;
     transform: translateY(0);
   }
@@ -245,10 +252,5 @@ html {
     transition-delay: 0.4s;
     transform: translateY(0);
   }
-
-  .imgC , .objblue {
-    filter: hue-rotate(230deg);
-  }
-  
   /*////////////////////////////////////////////////////////////////////////*/
 }
