@@ -1,19 +1,19 @@
-import { useState } from "react";
-import "../src/index.css";
-import Hero from "./components/main/Hero";
-import Navbar from "./components/main/Navbar";
+import { useState } from "react"
+import "../src/index.css"
+import Hero from "./components/main/Hero/Hero"
+import Navbar from "./components/main/Navbar"
 
 // import Encryption from './components/main/Encryption'
 // import Skills from './components/main/Skills'
 // import Test from './components/main/Test';
-import StarBackground from "../src/components/main/StarBackground";
-import Button_canvas from "./components/main/Button_canvas";
-import Planets from "./components/main/CardHover/Planets";
+import StarBackground from "../src/components/main/StarBackground"
+import Button_canvas from "./components/main/Button_canvas"
+import Planets from "./components/main/Planets/Planets"
 // import Pin from './components/main/Pin/Pin'
 // import Slider from "./components/main/Slider"
 
-import Technologies from "./components/main/Technologies";
-import D3dCard from './components/D3dCard'
+import Technologies from "./components/main/Technologies"
+// import D3dCard from './components/3d_vanila/D3dCard'
 // import Text_animations from "./components/main/Text_animations/Text_animations";
 // import Run_text from './components/main/Run_text'
 
@@ -39,21 +39,23 @@ function App() {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   return (
     <>
-      {!isNonMobileSafari && isStarBackgroundVisible && <StarBackground />}
+     
 
       <Navbar />
       <Hero />
       {/* <Text_animations /> */}
       <Technologies />
-      <D3dCard />
+      {/* <D3dCard /> */}
       {/* <CssSlider /> */}
       {/* <Run_text /> */}
       {/* <Slider /> */}
       {/* <Pin /> */}
       <Planets />
-
+{/* /////////////////////////////////////////////////////////////////////////////////////////////////*/}
+      {/* {!isNonMobileSafari && isStarBackgroundVisible && <StarBackground />} */}
+      {!isNonMobileSafari && isStarBackgroundVisible && !(/iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)) && <StarBackground />}
       <Button_canvas toggleStarBackground={toggleStarBackground} />
-
+{/* //////////////////////////////////////////////////////////////////////////////////////////////// */}
       {/* <Skills /> */}
       {/* <Encryption /> */}
       {/* <Footer /> */}

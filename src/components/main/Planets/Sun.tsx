@@ -3,7 +3,7 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { cn } from "../../../utils/cn";
 
-export const Moon = ({
+export const Sun = ({
   text,
   className,
 }: {
@@ -38,7 +38,7 @@ export const Moon = ({
     >
       <div
         onMouseMove={onMouseMove}
-        // className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
+        className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
       >
         <CardPattern
           mouseX={mouseX}
@@ -49,9 +49,9 @@ export const Moon = ({
           <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="" />
             <img
-              src="assets/images/Moon1.png"
+              src="assets/images/Sun1.png"
               alt="#"
-              className="absolute object-cover scale-[1] rotation_sun"
+              className="absolute object-cover scale-[0.8] rotation_sun"
             />
             <span
               className="	
@@ -64,7 +64,7 @@ export const Moon = ({
             bg-gradient-to-r 
             from-[#ffff] 
             to-[#9457EB]
-            z-20
+            
             "
             >
               {text}
@@ -77,7 +77,7 @@ export const Moon = ({
 };
 
 export function CardPattern({ mouseX, mouseY, randomString }: any) {
-  let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  let maskImage = useMotionTemplate`radial-gradient(300px at ${mouseX}px ${mouseY}px, white, transparent)`;
   let style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
@@ -109,18 +109,4 @@ export const generateRandomString = (length: number) => {
   return result;
 };
 
-export const Icon = ({ className, ...rest }: any) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className={className}
-      {...rest}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
-    </svg>
-  );
-};
+

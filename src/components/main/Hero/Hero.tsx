@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import HeroContent from "../sub/HeroContent";
+import React from "react";
+import HeroContent from "./HeroContent";
 
 const Hero = () => {
   return (
@@ -10,14 +10,17 @@ const Hero = () => {
       flex 
       max-w-[1920px] 
       mb-[200px]
+      
     "
-      id="about-me"
+     
     >
       <video
         autoPlay
         muted
         loop
         className="
+        hidden
+        lg:flex
         animate-custom-fade-in
         z-[-2]
         rotate-180 

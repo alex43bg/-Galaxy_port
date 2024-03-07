@@ -142,30 +142,10 @@ const HeroContent = () => {
         >
           <div style={{ position: "relative" }}>
             <img
-              src="./assets/images/min3-min.png"
+              src="./assets/images/min3-min1.png"
               alt="work icons"
               height={440}
               width={440}
-              style={{
-                top: 65,
-                left: 10,
-                filter: "blur(100px)",
-                position: "relative",
-              }}
-            />
-            <img
-              src="./assets/images/min3-min.png"
-              alt="work icons"
-              height={440}
-              width={440}
-              style={{
-                position: "absolute",
-                top: 50,
-                bottom: 0,
-                left: 1,
-                width: "100%",
-                height: "100%",
-              }}
             />
           </div>
         </div>

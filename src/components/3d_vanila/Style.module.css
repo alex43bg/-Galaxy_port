@@ -1,0 +1,129 @@
+.container{
+	position: relative;
+	width: 400px;
+	height: 500px;
+	padding: 40px 40px 0 40px;
+	border-radius:10px;
+	z-index: 1111;
+	transition: 0.3s;
+	transform: perspective(500px);
+	transform-style: preserve-3d;
+	margin: 0 auto;
+}
+.container:hover{
+	padding: 40px;
+}
+.imgbox{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	transform: translateZ(5px);
+}
+.imgC{
+	position: absolute;
+	transform: scale(0.9);
+	transition: 0.3s ease-in;
+	object-fit: cover;
+}
+.circle{
+	position: absolute;
+	height: 220px;
+	width: 220px;
+	background: radial-gradient(#ff0000, tomato);
+	border-radius: 50%;
+	top: 10%;
+	left: 15%;
+	transition: 0.3s ease-in;
+}
+
+.container:hover .circle{
+	height: 200px;
+	width: 200px;
+}
+
+.container:hover .imgbox .imgC{
+	transform: scale(1);
+}
+
+.Earthtext{
+	margin-top: 30px;
+	position: absolute;
+	font-size: 6em;
+	font-weight: 800;
+	top: 50%;
+	-webkit-text-stroke: 1px #fff;
+	opacity: 0.4;
+	color: transparent;
+	z-index: -1;
+}
+.title{
+	font-size: 1.4em;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+	word-spacing: 2px;
+	transition: 0.3s ease;
+	transform: translateZ(50px);
+}
+.container:hover .title {
+	font-size: 1.8em;
+	font-weight: 800;
+	color: #fff;
+}
+
+.buySection{
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	transition: all 0.3s;
+	transform: translateZ(100px);
+	color: #fff;
+}
+
+.buySection .price{
+ margin-top: 120px;
+ margin-left: 20px;
+ font-size: 1.6em;
+ transition: 0.3s;
+ transform: translateY(100px);
+ color: #fff;
+
+
+}
+.buySection .sup{
+	margin-top: 120px;
+	font-size: 0.7em;
+	font-weight: 300;
+
+ }
+ .buySection .sp{
+	font-size: 0.8em;
+	font-weight: 600;
+ }
+ .buySection .button{
+	width: 120px;
+	margin-top: 120px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #FDF5E6;
+	padding-top: 0.5rem; /* 2*0.25rem = 0.5rem */
+	padding-bottom: 0.5rem; /* 2*0.25rem = 0.5rem */
+	background-color: blue; /* Замініть на власний колір */
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0.5rem; /* 2*0.25rem = 0.5rem */
+	transform: translateY(100px);
+ }
+ .container:hover .buySection {
+	margin-top: 25px;
+}
+.container:hover .buySection .price{
+	transition-delay: 0.4s;
+	transform: translateY(0);
+}
+.container:hover .buySection .button{
+	transition-delay: 0.4s;
+	transform: translateY(0);
+}

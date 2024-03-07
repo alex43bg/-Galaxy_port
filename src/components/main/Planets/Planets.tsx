@@ -29,8 +29,7 @@ function Planets() {
           mt-[50px] 
           mb-[50px] 
           border 
-          border-black/[0.2] 
-          dark:border-white/[0.2] 
+        border-white/[0.2] 
           flex 
           flex-col 
           items-start 
@@ -66,8 +65,9 @@ function Planets() {
             </a>
           </div>
         </div>
+        {/* //////////////////////////////////////////////////////////////////////////// */}
         <div className="SUN-START p-4">
-          <div className="mt-[50px] mb-[50px] border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+          <div className="mt-[50px] mb-[50px] border border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Sun text="3D projects" />
 
             <h2
@@ -111,8 +111,9 @@ function Planets() {
             </a>
           </div>
         </div>
+        {/* ////////////////////////////////////////////////////////// */}
         <div className="Earth-Moon  p-4">
-          <div className="mt-[50px] mb-[50px] border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+          <div className="mt-[50px] mb-[50px] border border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
             <Moon text="Cool design projects" />
 
             <h2 className="text-white mt-1 text-sm font-light mb-4">
