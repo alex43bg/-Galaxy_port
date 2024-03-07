@@ -1,7 +1,7 @@
 "use client";
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import { cn } from "../../../utils/cn";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion"
+import React, { useEffect, useState } from "react"
+import { cn } from "../../../utils/cn"
 
 export const Sun = ({
   text,

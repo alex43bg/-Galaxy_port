@@ -49,13 +49,18 @@ export const Earth = ({
         <div className="relative z-10 flex items-center justify-center">
           <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="" />
-            <div className="rounded-full overflow-hidden w-[200px] absolute hidden md:block">
+            <img
+              src="assets/images/ED.png"
+              alt="#"
+              className="absolute object-cover scale-[0.6] sm:hidden"
+            />
+            <div className="rounded-full overflow-hidden w-[200px] absolute">
               <video
                 autoPlay
                 muted
                 loop
                 disablePictureInPicture
-                className=" rounded-full mx-auto overflow-hidden"
+                className=" rounded-full mx-auto overflow-hidden hidden sm:block"
               >
                 <source src="assets/images/ERS.mp4" type="video/mp4" />
               </video>
