@@ -1,6 +1,6 @@
 "use client";
+//@ts-ignore
 import React from "react";
-
 import { Sun } from "./Sun";
 import { Earth } from "./Earth";
 import { Moon } from "./Moon";

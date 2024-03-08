@@ -1,3 +1,5 @@
+"use client";
+//@ts-ignore
 import React from "react";
 
 const CssSlider = () => {

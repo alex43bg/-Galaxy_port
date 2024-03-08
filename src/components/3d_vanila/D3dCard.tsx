@@ -1,5 +1,7 @@
+//@ts-ignore
 import React, { useRef, useEffect, useState } from "react";
 import VanillaTilt from "vanilla-tilt";
+//@ts-ignore
 import Styles from "./Style.module.css";
 
 const D3dCard = () => {
@@ -24,7 +26,7 @@ const D3dCard = () => {
   }, [tiltInstance]); // Додано tiltInstance у список залежностей useEffect
 
   return (
-    <div className="w-full h-full">
+    <div className={Styles.w}>
       <div
         ref={containerRef}
         className={Styles.container}

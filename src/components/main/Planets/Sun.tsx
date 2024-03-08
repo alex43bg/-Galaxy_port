@@ -1,7 +1,9 @@
+
 "use client";
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion"
-import React, { useEffect, useState } from "react"
-import { cn } from "../../../utils/cn"
+//@ts-ignore
+import React, { useEffect, useState } from "react";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import { cn } from "utils/cn";
 
 export const Sun = ({
   text,
@@ -108,5 +110,3 @@ export const generateRandomString = (length: number) => {
   }
   return result;
 };
-
-
