@@ -1,0 +1,67 @@
+import { useState } from "react"
+import "../../src/index.css"
+import Hero from "../../src/components/main/Hero/Hero"
+import Navbar from "../../src/components/main/Navbar"
+
+// import Encryption from './components/main/Encryption'
+// import Skills from './components/main/Skills'
+// import Test from './components/main/Test';
+import StarBackground from "../../src/components/main/StarBackground"
+import Button_canvas from "../../src/components/main/Button_canvas"
+import Planets from "../../src/components/main/Planets/Planets"
+// import Pin from './components/main/Pin/Pin'
+// import Slider from "./components/main/Slider"
+
+import Technologies from "../../src/components/main/Technologies"
+// import D3dCard from './components/3d_vanila/D3dCard'
+// import Text_animations from "./components/main/Text_animations/Text_animations";
+// import Run_text from './components/main/Run_text'
+
+
+// import ThreeDCardDemo from "./components/main/Card-3dTest"
+// import CssSlider from './components/cssSlider';
+
+const Home = () =>{
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  const [isStarBackgroundVisible, setIsStarBackgroundVisible] = useState(true);
+  const toggleStarBackground = () => {
+    setIsStarBackgroundVisible(!isStarBackgroundVisible);
+  };
+
+  const userAgent = navigator.userAgent;
+  const isSafari =
+    userAgent.includes("Safari") && !userAgent.includes("Chrome");
+  const isMobile = /Mobi/.test(userAgent);
+  const isNonMobileSafari = isSafari && !isMobile;
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  return (
+    <>
+     
+
+      <Navbar />
+      <Hero />
+      {/* <Text_animations /> */}
+      <Technologies />
+      {/* <D3dCard /> */}
+      {/* <CssSlider /> */}
+      {/* <Run_text /> */}
+      {/* <Slider /> */}
+      {/* <Pin /> */}
+      <Planets />
+{/* /////////////////////////////////////////////////////////////////////////////////////////////////*/}
+      {/* {!isNonMobileSafari && isStarBackgroundVisible && <StarBackground />} */}
+      {!isNonMobileSafari && isStarBackgroundVisible && !(/iPad|iPod|Android/i.test(window.navigator.userAgent)) && <StarBackground />}
+      <Button_canvas toggleStarBackground={toggleStarBackground} />
+{/* //////////////////////////////////////////////////////////////////////////////////////////////// */}
+      {/* <Skills /> */}
+      {/* <Encryption /> */}
+      {/* <Footer /> */}
+    </>
+  );
+}
+
+export default Home;
+
