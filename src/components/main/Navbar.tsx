@@ -27,7 +27,7 @@ const Navbar = () => {
       >
         <div className="flex-grow flex justify-center items-center mx-auto">
           <a
-            href="/#home/"
+            href="/"
             className="
         NAME
         mx-auto
