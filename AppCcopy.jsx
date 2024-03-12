@@ -1,7 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Skils from "./Pages/Skils";
-import Home from './Pages/Home'
-import Projects from './Pages/Projects'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from './Pages/Home/Home'
+import Projects from './Pages/Projects/Projects'
+import Skils from "./Pages/Skils/Skils"
 
 const App = () => {
   return (

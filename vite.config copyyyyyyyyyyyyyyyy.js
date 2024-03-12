@@ -3,9 +3,11 @@ import { defineConfig } from 'vite'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 import { resolve } from 'path'
 
+
+
 export default defineConfig({
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+	
 	plugins: [
 		react(),
 		viteStaticCopy({
@@ -34,15 +36,14 @@ export default defineConfig({
 		emptyOutDir: true,
 		sourcemap: false,
 		rollupOptions: {
-			input: {
-				main: resolve(__dirname, 'index.html'),
-				skils: resolve(__dirname, './src/Pages/Skils/index.html'),
-				Projects: resolve(__dirname, './src/Pages/Projects/index.html'),
+			input:{
+				main: resolve(__dirname,'index.html'),
+				skils: resolve(__dirname,'./src/Pages/Skils/index.html'),
 			},
 			output: {
 				entryFileNames: '[name].js',
-				chunkFileNames: 'src/Pages/[name].js',
-				assetFileNames: 'src/Pages/[name].[ext]',
+				chunkFileNames: '[name].js',
+				assetFileNames: '[name].[ext]',
 			},
 		},
 	},
@@ -50,10 +51,10 @@ export default defineConfig({
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	resolve: {
 		alias: {
-			components: '/src/components/',
-			pages: '/src/pages/',
-			utils: '/src/utils/',
-			assets: '/src/assets/',
+			components:'/src/components/',
+			pages:'/src/pages/',
+			utils:'/src/utils/',
+			assets:'/src/assets/',
 			src: '/src',
 		},
 	},

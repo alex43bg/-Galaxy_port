@@ -27,7 +27,7 @@ const Navbar = () => {
       >
         <div className="flex-grow flex justify-center items-center mx-auto">
           <a
-            href="#"
+            href="/#home/"
             className="
         NAME
         mx-auto
@@ -79,11 +79,11 @@ const Navbar = () => {
           text-gray-200
           "
             >
-              <a href="#skills" className="cursor-pointer">
+              <a href="/skils/" className="cursor-pointer">
                 Skills
               </a>
 
-              <a href="#projects" className="cursor-pointer">
+              <a href="/Projects/" className="cursor-pointer">
                 Projects
               </a>
             </div>
