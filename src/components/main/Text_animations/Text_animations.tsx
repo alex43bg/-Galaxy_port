@@ -20,42 +20,60 @@ const Text_animations = () => {
 
   return (
     <>
-      <div className='mt-[200px]'>
-        <h1
-          className="
+      <div className="mx-auto max-w-[1900px] overflow-hidden">
+        <div className="flex  w-[200%] run_text_f">
+          <h1
+            className="
           text-[#334155]
-            text-7xl 
+            text-2xl 
+            opacity-90
+            whitespace-nowrap
+            w-[100%]
+            "
+          >
+            <span className="text-[#29D8FF]">React•</span>
+            React•React•React•React•React•React•React•React•React•React•React•React•
+          </h1>
+          <h1
+            className="
+          text-[#334155]
+            text-2xl 
+            opacity-90
+            whitespace-nowrap
+            w-[100%]
+            "
+          >
+            React•React•<span className="text-[#29D8FF]">React•</span>
+            React•React•React•React•React•React•React•React•React•React•React•React•React•React
+          </h1>
+        </div>
+
+        <div className="flex w-[200%] run_text_b">
+          <h1
+            className="
+          text-[#334155]
+            text-5xl 
             relative 
             opacity-90
+            whitespace-nowrap
             "
-        >
-          React•React•React•React•React•<span className='text-[#29D8FF]'>React•</span>React•React•React•React•
-        </h1>
-      </div>
-      <div className='mt-[30px]'>
-        <h1
-          className="
+          >
+            Next.js•
+            <span className="text-[#FFFFFF]">Next.js</span>Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•
+          </h1>
+          <h1
+            className="
           text-[#334155]
-            text-7xl 
+            text-5xl 
             relative 
             opacity-90
+            whitespace-nowrap
             "
-        >
-          Next.js•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js•Nextjs•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•Next.js•<span className='text-[#FFFFFF]'>Next.js</span>Next.js•Next.js•Next.js•Next.js...
-        </h1>
-      </div>
-      <div className='mt-[30px]'>
-        
-        <h1
-          className="
-          text-[#334155]
-            text-7xl 
-            relative 
-            opacity-90
-            "
-        >
-          Three.js•Three.js•Three.js•Three.js•<span className='text-[#EF7630]'>Three.js</span>•Three.js•Three.js•
-        </h1>
+          >
+            Next.js•Next.js•Next.js•
+            <span className="text-[#FFFFFF]">Next.js</span>Next.js•Next.js• Next.js•Next.js•Next.js• Next.js•Next.js•Next.js• Next.js•Next.js•Next.js• Next.js•Next.js•Next.js• Next.js•Next.js•Next.js•
+          </h1>
+        </div>
       </div>
     </>
   );

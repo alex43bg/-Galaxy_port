@@ -5,7 +5,7 @@ const Technologies = () => {
     <>
       <h1
         className="
-		mt-[200px]
+		mt-[20px]
 		text-2xl 
     p-1
 		lg:text-4xl 
@@ -18,7 +18,7 @@ const Technologies = () => {
     to-cyan-500
 		"
       >
-        Application development with such technologies
+        {/* Application development with such technologies */}
       </h1>
       <div
         className="
