@@ -30,7 +30,7 @@ export default defineConfig({
 	},
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	build: {
-		outDir: './build_ready',
+		outDir: './dist',
 		emptyOutDir: true,
 		sourcemap: false,
 		rollupOptions: {
