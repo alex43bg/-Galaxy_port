@@ -51,9 +51,10 @@ export const Earth = ({
           <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="" />
             <img
-              src="assets/images/ED.png"
+              src="assets/images/ED.webp"
               alt="#"
               className="absolute object-cover scale-[0.6] sm:hidden"
+              loading="lazy"
             />
             <div className="rounded-full overflow-hidden w-[200px] absolute">
               <video

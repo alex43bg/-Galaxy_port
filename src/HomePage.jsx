@@ -1,13 +1,13 @@
-import { useState } from "react";
-import "src/index.css";
-import Hero from "../src/components/main/Hero/Hero";
-import Navbar from "components/main/Navbar";
+import Navbar from "components/main/Navbar"
+import { useState } from "react"
+import "src/index.css"
+import Hero from "../src/components/main/Hero/Hero"
 
-import StarBackground from "components/main/StarBackground";
-import Button_canvas from "components/main/Button_canvas";
-import Planets from "../src/components/main/Planets/Planets";
+import Button_canvas from "components/main/Button_canvas"
+import StarBackground from "components/main/StarBackground"
+import Planets from "../src/components/main/Planets/Planets"
 
-import Technologies from "components/main/Technologies";
+import Technologies from "components/main/Technologies"
 
 function HomePage() {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -32,8 +32,10 @@ function HomePage() {
       <Hero />
       <Technologies />
       <Planets />
-      {!isNonMobileSafari && isStarBackgroundVisible && <StarBackground />}
+      {/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
+      {!isNonMobileSafari && isStarBackgroundVisible && !(/iPad|iPod|Android/i.test(window.navigator.userAgent)) && <StarBackground />}
       <Button_canvas toggleStarBackground={toggleStarBackground} />
+       {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */}
     </>
   );
 }

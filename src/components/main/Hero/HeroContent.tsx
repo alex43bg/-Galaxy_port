@@ -143,10 +143,11 @@ const HeroContent = () => {
         >
           <div style={{ position: "relative" }}>
             <img
-              src="./assets/images/min3-min1.png"
+              src="./assets/images/min3-min1.webp"
               alt="work icons"
               height={440}
               width={440}
+              // loading="lazy"
             />
           </div>
         </div>

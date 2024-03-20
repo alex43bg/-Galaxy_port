@@ -53,6 +53,7 @@ export const Moon = ({
               src="assets/images/Moon.png"
               alt="#"
               className="absolute object-cover scale-[1] rotation_sun"
+              loading="lazy"
             />
             <span
               className="	

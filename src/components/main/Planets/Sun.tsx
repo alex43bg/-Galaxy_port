@@ -54,6 +54,7 @@ export const Sun = ({
               src="assets/images/Sun1.png"
               alt="#"
               className="absolute object-cover scale-[0.8] rotation_sun"
+              loading="lazy"
             />
             <span
               className="	

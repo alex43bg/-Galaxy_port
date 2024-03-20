@@ -14,6 +14,10 @@ export default defineConfig({
 					src: 'src/public/**/*',
 					dest: 'assets/images',
 				},
+				{
+					src: 'src/Server_config/**/*',
+					dest: '',
+				},
 			],
 		}),
 	],
@@ -30,14 +34,15 @@ export default defineConfig({
 	},
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	build: {
-		outDir: './dist',
+		outDir: './build_ready',
 		emptyOutDir: true,
 		sourcemap: false,
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
-				skils: resolve(__dirname, './src/Pages/Skils/index.html'),
-				Projects: resolve(__dirname, './src/Pages/Projects/index.html'),
+				skils: resolve(__dirname, 'src/Pages/Skils/index.html'),
+				Projects: resolve(__dirname, 'src/Pages/Projects/index.html'),
+				NotFoundPage: resolve(__dirname, 'src/Pages/NotFoundPage/index.html'),
 			},
 			output: {
 				entryFileNames: '[name].js',
