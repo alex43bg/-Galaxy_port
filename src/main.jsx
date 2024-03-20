@@ -1,11 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React, { lazy, Suspense } from "react";
+import ReactDOM from "react-dom";
 import HomePage from "src/HomePage.jsx";
-import Skils from "src/Pages/Skils/Skils.jsx";
-import Projects from "src/Pages/Projects/Projects.jsx";
 import "src/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage.tsx";
+
+const Skils = lazy(() => import("src/Pages/Skils/Skils.jsx"));
+const Projects = lazy(() => import("src/Pages/Projects/Projects.jsx"));
 
 const router = createBrowserRouter([
   {
@@ -24,8 +25,11 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
   },
 ]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Suspense fallback={<div className='text-white'>Loading...</div>}>
+      <RouterProvider router={router} />
+    </Suspense>
   </React.StrictMode>
 );
