@@ -1,15 +1,17 @@
 //@ts-ignore
 import React from "react";
 import { Link } from "react-router-dom";
+import "./NotFoundPage.css"
+
 
 const NotFoundPage = () => {
   return (
     <>
-      <div className="absolute w-full h-full bg-transparent">
-        <div className="bg-[url('src/public/f.webp')] bg-cover bg-center w-full h-full opacity-85">
-        <div className="wrapper text-center bg-lime-400">
-          <div className="text-red-500 p-[5px] text-5xl">NOT FOUND PAGE</div>
-          <Link to="/" className="text-blue-500 p-[5px] text-8xl">
+      <div className="abs w-f h-f bg-t">
+        <div className="bg-[url('src/public/f.webp')] bg-c bg-ce w-f h-f opacity">
+        <div className="w">
+          <div className="text-r p-5 text-5">NOT FOUND PAGE</div>
+          <Link to="/" className="text-b p-5 text-8">
             GO Home
           </Link>
         </div>

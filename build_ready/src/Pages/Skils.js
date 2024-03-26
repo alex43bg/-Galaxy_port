@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime.js";import{N as e}from"./index.js";const x=()=>t.jsxs(t.Fragment,{children:[t.jsx("div",{className:"text-white mt-[500px] text-center text-8xl",children:"SKILS"}),t.jsx(e,{})]});export{x as default};

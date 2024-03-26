@@ -17,8 +17,7 @@ function HomePage() {
   };
 
   const userAgent = navigator.userAgent;
-  const isSafari =
-    userAgent.includes("Safari") && !userAgent.includes("Chrome");
+  const isSafari =  userAgent.includes("Safari") && !userAgent.includes("Chrome");
   const isMobile = /Mobi/.test(userAgent);
   const isNonMobileSafari = isSafari && !isMobile;
 

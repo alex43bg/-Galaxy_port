@@ -3,10 +3,11 @@ import ReactDOM from "react-dom";
 import HomePage from "src/HomePage.jsx";
 import "src/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage.tsx";
+
 
 const Skils = lazy(() => import("src/Pages/Skils/Skils.jsx"));
 const Projects = lazy(() => import("src/Pages/Projects/Projects.jsx"));
+const NotFoundPage = lazy(() => import("src/Pages/NotFoundPage/NotFoundPage.tsx"));
 
 const router = createBrowserRouter([
   {

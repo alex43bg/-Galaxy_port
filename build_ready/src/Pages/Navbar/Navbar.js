@@ -1,4 +1,4 @@
-import{j as c}from"./jsx-runtime.js";const r=()=>c.jsx("div",{className:"mx-auto",children:c.jsx("div",{className:`\r
+import{j as c}from"../jsx-runtime/jsx-runtime.js";const r=()=>c.jsx("div",{className:"mx-auto",children:c.jsx("div",{className:`\r
     WRAPPER NAVBAR\r
     mx-auto\r
     fixed\r

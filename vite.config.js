@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
-import { resolve } from 'path'
 
 export default defineConfig({
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -46,8 +46,19 @@ export default defineConfig({
 			},
 			output: {
 				entryFileNames: '[name].js',
-				chunkFileNames: 'src/Pages/[name].js',
-				assetFileNames: 'src/Pages/[name].[ext]',
+				chunkFileNames: chunkInfo => {
+					return `src/Pages/${chunkInfo.name}/${chunkInfo.name}.js`
+				},
+
+				assetFileNames: assetInfo => {
+					if (assetInfo.name.endsWith('.css')) {
+						const cssFileName = assetInfo.name.replace(/\.css$/, '')
+
+						return `src/Pages/${cssFileName}/${assetInfo.name}`
+					} else {
+						return `src/Pages/[name].[ext]`
+					}
+				},
 			},
 		},
 	},
@@ -65,4 +76,3 @@ export default defineConfig({
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 })
-
