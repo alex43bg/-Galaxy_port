@@ -36,7 +36,7 @@ export default defineConfig({
 	build: {
 		outDir: './build_ready',
 		emptyOutDir: true,
-		sourcemap: false,
+		sourcemap: true,
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),

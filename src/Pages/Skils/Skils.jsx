@@ -1,6 +1,8 @@
 
 import "src/index.css"
 import Navbar from "components/main/Navbar"
+import Test from './../../components/main/Test';
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -12,7 +14,8 @@ const Skils = () =>{
     <div className="text-white mt-[500px] text-center text-8xl">
     SKILS
     </div>
-      <Navbar />
+    <Navbar />
+    <Test/>
     </>
   );
 }
