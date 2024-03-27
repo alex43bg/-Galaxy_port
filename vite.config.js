@@ -3,6 +3,7 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 export default defineConfig({
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -33,7 +34,7 @@ export default defineConfig({
 		outDir: './build_ready',
 		emptyOutDir: true,
 		sourcemap: false,
-		assetsDir: 'assets', 
+		assetsDir: 'assets',
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
@@ -52,11 +53,12 @@ export default defineConfig({
 						const cssFileName = assetInfo.name.replace(/\.css$/, '')
 						return `src/Pages/${cssFileName}/${assetInfo.name}`
 					} else {
-						
-						if (assetInfo.name.match(/\.(png|jpe?g|gif|webp|svg|mp4|webm)$/)) {
-							return `src/images/${assetInfo.name}`;
+						if (assetInfo.name.match(/\.(png|jpe?g|gif|webp|svg)$/)) {
+							return `assets/images/${assetInfo.name}`
+						} else if (assetInfo.name.match(/\.(mp4|webm)$/)) {
+							return `assets/videos/${assetInfo.name}`
 						} else {
-							return `src/[name].[ext]`;
+							return `src/[name].[ext]`
 						}
 					}
 				},
