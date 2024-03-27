@@ -10,10 +10,6 @@ export default defineConfig({
 		react(),
 		viteStaticCopy({
 			targets: [
-				// {
-				// 	src: 'src/public/**/*',
-				// 	dest: '/images',
-				// },
 				{
 					src: 'src/Server_config/**/*',
 					dest: '',
@@ -37,6 +33,7 @@ export default defineConfig({
 		outDir: './build_ready',
 		emptyOutDir: true,
 		sourcemap: false,
+		assetsDir: 'assets', 
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),
@@ -53,10 +50,14 @@ export default defineConfig({
 				assetFileNames: assetInfo => {
 					if (assetInfo.name.endsWith('.css')) {
 						const cssFileName = assetInfo.name.replace(/\.css$/, '')
-
 						return `src/Pages/${cssFileName}/${assetInfo.name}`
 					} else {
-						return `src/Pages/[name].[ext]`
+						
+						if (assetInfo.name.match(/\.(png|jpe?g|gif|webp|svg|mp4|webm)$/)) {
+							return `src/images/${assetInfo.name}`;
+						} else {
+							return `src/[name].[ext]`;
+						}
 					}
 				},
 			},

@@ -54,7 +54,7 @@ export const Sun = ({
             <div className="" />
             <img
               src={Sun1_png}
-              alt="#"
+              alt="3D projects"
               className="absolute object-cover scale-[0.8] rotation_sun"
               loading="lazy"
             />
