@@ -4,6 +4,8 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { cn } from "utils/cn";
+//@ts-ignore
+import Sun1_png from "src/public/Sun1.png";
 
 export const Sun = ({
   text,
@@ -51,7 +53,7 @@ export const Sun = ({
           <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="" />
             <img
-              src="assets/images/Sun1.png"
+              src={Sun1_png}
               alt="#"
               className="absolute object-cover scale-[0.8] rotation_sun"
               loading="lazy"

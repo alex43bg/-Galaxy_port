@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { cn } from "utils/cn";
+//@ts-ignore
+import Moon_png from 'src/public/Moon.png';
 
 export const Moon = ({
   text,
@@ -50,7 +52,7 @@ export const Moon = ({
           <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="" />
             <img
-              src="assets/images/Moon.png"
+              src={Moon_png}
               alt="#"
               className="absolute object-cover scale-[1] rotation_sun"
               loading="lazy"

@@ -1,6 +1,12 @@
 //@ts-ignore
 import React from 'react';
 import { P3Primaries } from 'three'
+//@ts-ignore
+import ED_webp from 'src/public/ED.webp';
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 const Test = () => {
 	return (
@@ -10,13 +16,13 @@ const Test = () => {
 					<div className='text-red-500 p-[5px]'>Content1</div>
 			
 					<img
-              src="/images/Sun1.png"
+              src={ED_webp}
               alt="#"
               className="text-white"
             />
 				</div>
 			</div>
-			<span className='text-white'>hallo</span>
+
 		</>
 	);
 };

@@ -1,8 +1,10 @@
 //@ts-ignore
 import React from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
-// import { ScroolTrigger,  ScroolSmoother} from "gsap";
 
+//@ts-ignore
+import min3_min1_webp from "src/public/min3-min1.webp"
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const HeroContent = () => {
   
   return (
@@ -143,11 +145,11 @@ const HeroContent = () => {
         >
           <div style={{ position: "relative" }}>
             <img
-              src="./assets/images/min3-min1.webp"
+              src={min3_min1_webp}
               alt="work icons"
               height={440}
               width={440}
-              // loading="lazy"
+              loading="lazy"
             />
           </div>
         </div>

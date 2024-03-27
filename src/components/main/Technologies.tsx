@@ -1,5 +1,10 @@
+//@ts-ignore
 import React from "react";
+//@ts-ignore
+import th_png from 'src/public/th.png';
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 const Technologies = () => {
   return (
     <>
@@ -44,7 +49,7 @@ const Technologies = () => {
           
           "
         >
-          <img src="./assets/images/th.png" alt="Technologies" className="h-auto md:h-[500px]"/>
+          <img src={th_png} alt="Technologies" className="h-auto md:h-[500px]"/>
         </div>
       </div>
     </>

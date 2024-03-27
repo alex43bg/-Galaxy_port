@@ -3,6 +3,10 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { cn } from "utils/cn";
+//@ts-ignore
+import ED from 'src/public/ED.webp';
+//@ts-ignore
+import ERS_mp4 from 'src/public/ERS.mp4';
 
 export const Earth = ({
   text,
@@ -51,7 +55,7 @@ export const Earth = ({
           <div className="relative h-44 w-[300px]  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="" />
             <img
-              src="assets/images/ED.webp"
+              src={ED}
               alt="#"
               className="absolute object-cover scale-[0.6] sm:hidden"
               loading="lazy"
@@ -64,7 +68,7 @@ export const Earth = ({
                 disablePictureInPicture
                 className=" rounded-full mx-auto overflow-hidden hidden sm:block"
               >
-                <source src="assets/images/ERS.mp4" type="video/mp4" />
+                <source src={ERS_mp4} type="video/mp4" />
               </video>
             </div>
             <span

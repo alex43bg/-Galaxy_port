@@ -10,10 +10,10 @@ export default defineConfig({
 		react(),
 		viteStaticCopy({
 			targets: [
-				{
-					src: 'src/public/**/*',
-					dest: 'assets/images',
-				},
+				// {
+				// 	src: 'src/public/**/*',
+				// 	dest: '/images',
+				// },
 				{
 					src: 'src/Server_config/**/*',
 					dest: '',
@@ -36,7 +36,7 @@ export default defineConfig({
 	build: {
 		outDir: './build_ready',
 		emptyOutDir: true,
-		sourcemap: true,
+		sourcemap: false,
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, 'index.html'),

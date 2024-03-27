@@ -1,5 +1,6 @@
 
 import "src/index.css"
+import Test from '../../components/main/Test'
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -11,6 +12,7 @@ const Projects = () =>{
     <div className="text-white mt-[500px] text-center text-8xl">
     Projects
     </div>
+    <Test/>
       
     </>
   );

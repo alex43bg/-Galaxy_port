@@ -1,6 +1,8 @@
 //@ts-ignore
 import React from "react";
 import HeroContent from "./HeroContent";
+//@ts-ignore
+import blackhole_mp4 from "src/public/blackhole.mp4";
 
 const Hero = () => {
   return (
@@ -40,7 +42,7 @@ const Hero = () => {
         max-w-[1920px]
         "
       >
-        <source src="assets/images/blackhole.mp4" type="video/mp4" />
+        <source src={blackhole_mp4} type="video/mp4" />
       </video>
       <HeroContent />
     </div>

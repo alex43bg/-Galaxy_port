@@ -8,7 +8,7 @@ import StarBackground from "components/main/StarBackground"
 import Planets from "../src/components/main/Planets/Planets"
 
 import Technologies from "components/main/Technologies"
-import Test from './components/main/Test'
+
 
 function HomePage() {
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -32,7 +32,6 @@ function HomePage() {
       <Hero />
       <Technologies />
       <Planets />
-      <Test/>
       {/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
       {!isNonMobileSafari && isStarBackgroundVisible && !(/iPad|iPod|Android/i.test(window.navigator.userAgent)) && <StarBackground />}
       <Button_canvas toggleStarBackground={toggleStarBackground} />

@@ -1,11 +1,9 @@
 
 import "src/index.css"
 import Navbar from "components/main/Navbar"
-import Test from './../../components/main/Test';
-
+import Planets from 'src/components/main/Planets/Planets'
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 const Skils = () =>{
 
@@ -15,7 +13,7 @@ const Skils = () =>{
     SKILS
     </div>
     <Navbar />
-    <Test/>
+    <Planets/>
     </>
   );
 }
