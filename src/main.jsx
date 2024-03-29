@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
   },
   {
-    path: "/Skils",
+    path: "/Skils",       
     element: <Skils />,
     errorElement: <NotFoundPage />,
   },

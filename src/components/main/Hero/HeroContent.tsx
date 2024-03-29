@@ -149,7 +149,6 @@ const HeroContent = () => {
               alt="work icons"
               height={440}
               width={440}
-              loading="lazy"
             />
           </div>
         </div>

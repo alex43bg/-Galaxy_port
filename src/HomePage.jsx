@@ -28,7 +28,7 @@ function HomePage() {
   return (
     <>
     
-      <Navbar />
+      <Navbar />    
       <Hero />
       <Technologies />
       <Planets />

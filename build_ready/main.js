@@ -80,7 +80,7 @@ import{r as me,j as je,g as Rd,R as Cx}from"./src/Pages/jsx-runtime/jsx-runtime.
           justify-center \r
           items-center \r
           z-[-2]\r
-          `,children:je.jsx("div",{style:{position:"relative"},children:je.jsx("img",{src:zx,alt:"work icons",height:440,width:440,loading:"lazy"})})})]})}),Hx="/assets/videos/blackhole.mp4",Vx=()=>je.jsxs("div",{className:`\r
+          `,children:je.jsx("div",{style:{position:"relative"},children:je.jsx("img",{src:zx,alt:"work icons",height:440,width:440})})})]})}),Hx="/assets/videos/blackhole.mp4",Vx=()=>je.jsxs("div",{className:`\r
       mx-auto\r
       relative \r
       flex \r
@@ -3963,3 +3963,4 @@ function __vite__mapDeps(indexes) {
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
+//# sourceMappingURL=main.js.map

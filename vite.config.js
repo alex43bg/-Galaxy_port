@@ -33,7 +33,7 @@ export default defineConfig({
 	build: {
 		outDir: './build_ready',
 		emptyOutDir: true,
-		sourcemap: false,
+		sourcemap: true,
 		assetsDir: 'assets',
 		rollupOptions: {
 			input: {
