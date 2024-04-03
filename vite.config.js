@@ -33,7 +33,7 @@ export default defineConfig({
 	build: {
 		outDir: './build_ready',
 		emptyOutDir: true,
-		sourcemap: true,
+		sourcemap: false,
 		assetsDir: 'assets',
 		rollupOptions: {
 			input: {
@@ -43,15 +43,16 @@ export default defineConfig({
 				NotFoundPage: resolve(__dirname, 'src/Pages/NotFoundPage/index.html'),
 			},
 			output: {
-				entryFileNames: '[name].js',
+				entryFileNames: '[name].[hash].js',
 				chunkFileNames: chunkInfo => {
-					return `src/Pages/${chunkInfo.name}/${chunkInfo.name}.js`
+					return `src/Pages/${chunkInfo.name}/.[hash]___${chunkInfo.name}.js`
 				},
 
 				assetFileNames: assetInfo => {
 					if (assetInfo.name.endsWith('.css')) {
 						const cssFileName = assetInfo.name.replace(/\.css$/, '')
-						return `src/Pages/${cssFileName}/${assetInfo.name}`
+						const randomHash = Math.random().toString(36).substring(7);
+						return `src/Pages/${cssFileName}/${randomHash}___${assetInfo.name}`
 					} else {
 						if (assetInfo.name.match(/\.(png|jpe?g|gif|webp|svg)$/)) {
 							return `assets/images/${assetInfo.name}`

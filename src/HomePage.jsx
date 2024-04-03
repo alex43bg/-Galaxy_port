@@ -1,13 +1,13 @@
-import Navbar from "components/main/Navbar"
+import Navbar from "src/components/main/Navbar"
 import { useState } from "react"
 import "src/index.css"
-import Hero from "../src/components/main/Hero/Hero"
+import Hero from "src/components/main/Hero/Hero"
 
-import Button_canvas from "components/main/Button_canvas"
-import StarBackground from "components/main/StarBackground"
-import Planets from "../src/components/main/Planets/Planets"
+import Button_canvas from "src/components/main/Button_canvas"
+import StarBackground from "src/components/main/StarBackground"
+import Planets from "src/components/main/Planets/Planets"
 
-import Technologies from "components/main/Technologies"
+import Technologies from "src/components/main/Technologies"
 
 
 function HomePage() {

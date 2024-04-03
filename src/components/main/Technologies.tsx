@@ -49,7 +49,7 @@ const Technologies = () => {
           
           "
         >
-          <img src={th_png} alt="Technologies" className="h-auto md:h-[500px]"/>
+          <img src={th_png} alt="Technologies" className="w-[500px] h-[px] sm:w-auto sm:h-auto md:h-[500px]"/>
         </div>
       </div>
     </>
